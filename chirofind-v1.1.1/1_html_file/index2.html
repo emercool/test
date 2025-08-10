@@ -96,6 +96,32 @@
                 margin-top: 40px;
             }
         }
+        
+        /* Services section - equal height styling */
+        .services-one__single {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .services-one__content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .services-one__text {
+            flex: 1;
+            margin-bottom: 0;
+        }
+        
+        .swiper-slide {
+            height: auto;
+        }
+        
+        .swiper-slide .services-one__single {
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -140,7 +166,6 @@
                                     <a href="#"><i class="icon-facebook"></i></a>
                                     <a href="#"><i class="icon-twitter"></i></a>
                                     <a href="#"><i class="icon-link-in"></i></a>
-                                    <a href="#"><i class="icon-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -172,31 +197,11 @@
                                             <li>
                                                 <a href="index2.html">Home</a>
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="#">Services</a>
-                                                <ul>
-                                                    <!-- <li><a href="services1.html">Services V-1</a></li>
-                                                    <li><a href="services2.html">Services V-2</a></li> -->
-                                                    <li><a href="trained-therapists.html">Trained Therapists</a></li>
-                                                    <li><a href="massages-therapy.html">Massages Therapy</a></li>
-                                                    <li><a href="chiropractic-care.html">Chiropractic Care</a></li>
-                                                    <li><a href="laser-therapy.html">Laser Therapy</a></li>
-                                                    <li><a href="physical-rehab.html">Physical Rehab</a></li>
-                                                </ul>
+                                            <li>
+                                                <a href="#services">Services</a>
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="#">Pages</a>
-                                                <ul>
-                                                    <li><a href="team1.html">Team V-1</a></li>
-                                                    <li><a href="team2.html">Team V-2</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
-                                                    <!-- <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                    <li><a href="pricing.html">Pricing Plans</a></li> -->
-                                                    <li><a href="appointment.html">Appointment</a></li>
-                                                    <li><a href="faq.html">Faq</a></li>
-                                                    <li><a href="404.html">404 Error</a></li>
-                                                </ul>
+                                            <li>
+                                                <a href="#team">Team</a>
                                             </li>
                                             <!-- <li class="dropdown">
                                                 <a href="#">Shop</a>
@@ -217,23 +222,32 @@
                                                 </ul>
                                             </li> -->
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="#contact">Contact</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="menu-icons-button">
-                                    <div class="main-menu__search-cart-box">
+                                    <!-- <div class="main-menu__search-cart-box">
                                         <a href="#" class="main-menu__search search-bar-btn icon-search"></a>
                                         <a href="cart.html" class="main-menu__cart  icon-cart"></a>
                                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                    </div>
-                                    <div class="main-menu__btn-box-outer">
+                                    </div> -->
+                                    <!-- <div class="main-menu__btn-box-outer">
                                         <div class="main-menu__btn-box">
                                             <a href="appointment.html" class="main-menu__btn thm-btn">
                                                 Appointment Now
                                                 <span class="icon-right-arrow"></span>
                                             </a>
+                                        </div>
+                                    </div> -->
+                                    <div class="main-menu-two__call">
+                                        <div class="main-menu-two__call-icon">
+                                            <span class="icon-call-2"></span>
+                                        </div>
+                                        <div class="main-menu-two__call-number">
+                                            <p>Call Us Now</p>
+                                            <h5><a href="tel:20866660112">+208-666-0112</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -289,9 +303,9 @@
                                         </div>
                                         <h2 class="main-slider__title">Welcome to Best <br> <span>Health</span> Life</h2>
                                         <p class="main-slider__text"> We are a leading Physical Therapy Practice providing comprehensive rehabilitation <br> and pain relief for patients across the world.</p>
-                                        <div class="main-slider__btn-box">
+                                        <!-- <div class="main-slider__btn-box">
                                             <a href="services1.html" class="main-slider__btn thm-btn">View Services<span class="icon-right-arrow"></span></a>
-                                        </div>
+                                        </div> -->
                                         <div class="main-slider__rounded-text">
                                             <a href="https://www.youtube.com/watch?v=To9VzfdWYlc"
                                                 class="video-popup main-slider__curved-circle-box">
@@ -347,10 +361,10 @@
                                         </div>
                                         <h2 class="main-slider__title">Farewell to Pain <br> <span>Welcome</span> Freedom</h2>
                                         <p class="main-slider__text"> We are a leading Physical Therapy Practice providing evidence-based treatment <br> and recovery solutions for patients worldwide.</p>
-                                        <div class="main-slider__btn-box">
+                                        <!-- <div class="main-slider__btn-box">
                                             <a href="services1.html" class="main-slider__btn thm-btn">View Services<span
                                                     class="icon-right-arrow"></span></a>
-                                        </div>
+                                        </div> -->
                                         <div class="main-slider__rounded-text">
                                             <a href="https://www.youtube.com/watch?v=To9VzfdWYlc"
                                                 class="video-popup main-slider__curved-circle-box">
@@ -409,9 +423,9 @@
 
                                         <p class="main-slider__text"> We are a leading Physical Therapy Practice providing personalized treatment <br> and rehabilitation programs for optimal recovery.</p>
                                         
-                                        <div class="main-slider__btn-box">
+                                        <!-- <div class="main-slider__btn-box">
                                             <a href="services1.html" class="main-slider__btn thm-btn">View Services<span class="icon-right-arrow"></span></a>
-                                        </div>
+                                        </div> -->
                                         <div class="main-slider__rounded-text">
                                             <a href="https://www.youtube.com/watch?v=To9VzfdWYlc"
                                                 class="video-popup main-slider__curved-circle-box">
@@ -437,7 +451,7 @@
         <!--Main Slider End-->
 
         <!--Services One  Start -->
-        <section class="services-one">
+        <section class="services-one" id="services">
             <div class="services-one__shape-2 float-bob-x">
                 <img src="assets/images/shapes/services-one-shape-2.png" alt="">
             </div>
@@ -478,9 +492,9 @@
                                     </div>
                                     <div class="services-one__content">
                                         <h3 class="services-one__title"><a href="physical-rehab.html">Physical
-                                                Rehab</a>
+                                                Rehabilitation</a>
                                         </h3>
-                                        <p class="services-one__text">Comprehensive rehabilitation programs designed to restore mobility, <br>strength, and function through evidence-based physical therapy techniques.</p>
+                                        <p class="services-one__text">Our comprehensive rehabilitation programs are designed to restore mobility, strength, and function through evidence-based physical therapy techniques. We specialize in post-surgical recovery, injury rehabilitation, and chronic condition management. Our certified therapists create personalized treatment plans that combine manual therapy, therapeutic exercises, and advanced modalities to accelerate your recovery and restore your quality of life.</p>
                                         <!-- <div class="services-one__btn-box">
                                             <a href="physical-rehab.html" class="services-one__btn thm-btn">Read
                                                 More<span class="icon-right-arrow"></span></a>
@@ -502,9 +516,9 @@
                                     </div>
                                     <div class="services-one__content">
                                         <h3 class="services-one__title"><a href="laser-therapy.html">Sports
-                                                Injury</a>
+                                                Injury Rehabilitation</a>
                                         </h3>
-                                        <p class="services-one__text">Specialized treatment for sports-related injuries with targeted <br>rehabilitation to get you back to peak performance safely.</p>
+                                        <p class="services-one__text">Our specialized sports injury rehabilitation program is designed for athletes of all levels, from weekend warriors to professional competitors. We treat common sports injuries including ACL tears, rotator cuff injuries, tennis elbow, and stress fractures. Our sports-focused approach combines injury-specific exercises, functional training, and performance enhancement techniques to safely return you to your sport while preventing future injuries and improving overall athletic performance.</p>
                                         <!-- <div class="services-one__btn-box">
                                             <a href="laser-therapy.html" class="services-one__btn thm-btn">Read
                                                 More<span class="icon-right-arrow"></span></a>
@@ -525,8 +539,8 @@
                                         </div>
                                     </div>
                                     <div class="services-one__content">
-                                        <h3 class="services-one__title"><a href="physical-rehab.html">Pain Management</a></h3>
-                                        <p class="services-one__text">Specialized pain management techniques including manual therapy, <br>therapeutic exercises, and modalities to reduce chronic pain and improve function.</p>
+                                        <h3 class="services-one__title"><a href="physical-rehab.html">Chronic Pain Management</a></h3>
+                                        <p class="services-one__text">Our comprehensive chronic pain management program addresses the root causes of persistent pain through a multidisciplinary approach. We utilize advanced techniques including manual therapy, therapeutic exercises, dry needling, and pain neuroscience education. Our therapists work closely with you to develop long-term pain management strategies, improve functional mobility, and enhance your quality of life. We treat conditions such as chronic back pain, fibromyalgia, arthritis, and neuropathic pain with evidence-based interventions.</p>
                                         <!-- <div class="services-one__btn-box">
                                             <a href="physical-rehab.html" class="services-one__btn thm-btn">Read More<span class="icon-right-arrow"></span></a>
                                         </div> -->
@@ -560,9 +574,9 @@
                                 <div class="about-one__img">
                                     <img src="assets/Physical Therapy Images/getty-images-BJB9JAYQNsA-unsplash.jpg" alt="">
                                 </div>
-                                <div class="about-one__shape-1">
+                                <!-- <div class="about-one__shape-1">
                                     <img src="assets/images/shapes/about-one-shape-1.png" alt="">
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
@@ -577,20 +591,26 @@
                                 <h2 class="section-title__title">Explore Our Advanced<br> Physical Therapy Clinic
                                 </h2>
                             </div>
-                            <p class="about-one__text">Our state-of-the-art physical therapy clinic is dedicated to helping patients recover from injuries, manage chronic pain, and improve their overall physical function through evidence-based treatment approaches.</p>
+                            <p class="about-one__text">Our state-of-the-art physical therapy clinic is dedicated to helping patients recover from injuries, manage chronic pain, and improve their overall physical function through evidence-based treatment approaches. With over 15 years of experience in rehabilitation medicine, our team of certified physical therapists combines cutting-edge technology with proven therapeutic techniques to deliver exceptional patient outcomes. We believe in treating the whole person, not just the injury, ensuring comprehensive care that addresses both immediate needs and long-term wellness goals.</p>
                             <div class="about-one__points-box">
                                 <ul class="about-one__points list-unstyled">
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Physical Therapy</p>
+                                        <p>Evidence-Based Physical Therapy</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Advanced Equipment</p>
+                                        <p>State-of-the-Art Equipment</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Personalized Treatment Plans</p>
                                     </li>
                                 </ul>
                                 <ul class="about-one__points about-one__points-2 list-unstyled">
@@ -598,13 +618,19 @@
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>High Quality Care</p>
+                                        <p>Licensed & Certified Therapists</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Expert Therapists</p>
+                                        <p>Comprehensive Care Approach</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Ongoing Support & Education</p>
                                     </li>
                                 </ul>
                             </div>
@@ -636,12 +662,14 @@
         <!--About One End -->
 
         <!--Our Offering Start -->
+        <!--
         <section class="our-offering">
             <div class="our-offering__bg" style="background-image: url(assets/images/backgrounds/our-offering-bg.jpg);">
             </div>
             <div class="our-offering__bg-box-2"></div>
-            <iframe src="https://calendly.com/emersondcoulibaly/" width="100%" height="600" frameborder="0"></iframe>
-
+            <div class="our-offering__bg-box">
+                <div class="our-offering__bg-shape" style="background-image: url(assets/images/shapes/our-offering-bg-shape.jpg);"></div>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -671,7 +699,7 @@
                                         class="icon-right-arrow"></span></a>
                             </div>
                             <div class="our-offering__video-link">
-                                                                        <a href="https://www.youtube.com/watch?v=To9VzfdWYlc" class="video-popup">
+                                <a href="https://www.youtube.com/watch?v=To9VzfdWYlc" class="video-popup">
                                     <div class="our-offering__video-icon">
                                         <span class="icon-play"></span>
                                         <i class="ripple"></i>
@@ -683,10 +711,11 @@
                 </div>
             </div>
         </section>
+        -->
         <!--Our Offering End -->
 
         <!--Team One Start -->
-        <section class="team-one">
+        <section class="team-one" id="team">
             <div class="team-one__shape-1 float-bob-x">
                 <img src="assets/images/shapes/team-one-shape-1.png" alt="">
             </div>
@@ -710,12 +739,13 @@
                                 <div class="section-title__tagline-shape-1"></div>
                                 <span class="section-title__tagline">Our Therapists</span>
                             </div>
-                                                            <h2 class="section-title__title">Highly Qualified Physical Therapists</h2>
+                            <h2 class="section-title__title">Highly Qualified Physical Therapists</h2>
+                            <p class="section-title__text" style="margin-top: 20px; color: #666; line-height: 1.6;">Our team of licensed physical therapists brings together decades of combined experience in rehabilitation medicine. Each therapist specializes in specific areas of physical therapy, ensuring you receive expert care tailored to your unique condition and recovery goals. We maintain the highest standards of professional development through continuous education and training in the latest therapeutic techniques and technologies.</p>
                         </div>
                     </div>
-                    <div class="team-one__btn-box">
+                    <!-- <div class="team-one__btn-box">
                         <a href="team1.html" class="team-one__btn thm-btn">All Therapist<span class="icon-right-arrow"></span></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="row">
                     <!--Team one Single Start-->
@@ -727,8 +757,9 @@
                                 </div>
                             </div>
                             <div class="team-one__content">
-                                <h3 class="team-one__title"><a href="team-details.html">Marvin McKinney</a></h3>
-                                <p class="team-one__sub-title">Senior Physical Therapist</p>
+                                <h3 class="team-one__title"><a href="team-details.html">Dr. Marvin McKinney</a></h3>
+                                <p class="team-one__sub-title">Senior Physical Therapist & Clinical Director</p>
+                                <p class="team-one__description" style="font-size: 14px; color: #666; margin: 10px 0; line-height: 1.5;">Specializing in orthopedic rehabilitation and post-surgical recovery with over 12 years of clinical experience. Dr. McKinney holds advanced certifications in manual therapy and sports rehabilitation.</p>
                                 <div class="team-one__social">
                                     <a href="team-details.html"><span class="icon-facebook"></span></a>
                                     <a href="team-details.html"><span class="icon-instagram"></span></a>
@@ -748,8 +779,9 @@
                                 </div>
                             </div>
                             <div class="team-one__content">
-                                <h3 class="team-one__title"><a href="team-details.html">Leslie Alexander</a></h3>
-                                <p class="team-one__sub-title">Sports Physical Therapist</p>
+                                <h3 class="team-one__title"><a href="team-details.html">Dr. Leslie Alexander</a></h3>
+                                <p class="team-one__sub-title">Sports Physical Therapist & Performance Specialist</p>
+                                <p class="team-one__description" style="font-size: 14px; color: #666; margin: 10px 0; line-height: 1.5;">Expert in sports injury rehabilitation and athletic performance enhancement. Dr. Alexander works with professional athletes and weekend warriors, specializing in return-to-sport protocols and injury prevention strategies.</p>
                                 <div class="team-one__social">
                                     <a href="team-details.html"><span class="icon-facebook"></span></a>
                                     <a href="team-details.html"><span class="icon-instagram"></span></a>
@@ -769,8 +801,9 @@
                                 </div>
                             </div>
                             <div class="team-one__content">
-                                <h3 class="team-one__title"><a href="team-details.html">Leslie Alexander</a></h3>
-                                <p class="team-one__sub-title">Rehabilitation Specialist</p>
+                                <h3 class="team-one__title"><a href="team-details.html">Dr. Sarah Chen</a></h3>
+                                <p class="team-one__sub-title">Rehabilitation Specialist & Pain Management Expert</p>
+                                <p class="team-one__description" style="font-size: 14px; color: #666; margin: 10px 0; line-height: 1.5;">Specializing in chronic pain management and neurological rehabilitation. Dr. Chen combines traditional physical therapy with innovative pain neuroscience education and advanced therapeutic modalities to help patients achieve lasting pain relief.</p>
                                 <div class="team-one__social">
                                     <a href="team-details.html"><span class="icon-facebook"></span></a>
                                     <a href="team-details.html"><span class="icon-instagram"></span></a>
@@ -785,6 +818,28 @@
             </div>
         </section>
         <!--Team One End -->
+
+        <!--Appointment Booking Start -->
+        <section class="appointment-booking" style="padding: 60px 0; background-color: #f8f9fa;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-title text-center">
+                            <div class="section-title__tagline-box">
+                                <div class="section-title__tagline-shape-1"></div>
+                                <span class="section-title__tagline">Book Appointment</span>
+                            </div>
+                            <h2 class="section-title__title">Schedule Your Session</h2>
+                            <p class="section-title__text" style="margin-top: 20px; color: #666; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Ready to start your journey to recovery? Book your initial consultation with one of our experienced physical therapists. We offer flexible scheduling options including morning, afternoon, and evening appointments to accommodate your busy lifestyle. Your first session includes a comprehensive evaluation and personalized treatment plan.</p>
+                        </div>
+                        <div style="margin-top: 40px;">
+                            <iframe src="https://calendly.com/emersondcoulibaly/" width="100%" height="600" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Appointment Booking End -->
 
         <!--Testimonial One Start -->
         <section class="testimonial-one">
@@ -874,16 +929,16 @@
                                 </div>
                                 <h2 class="section-title__title">See Our Clients Feedback</h2>
                             </div>
-                            <p class="testimonial-one__text">Hear from our patients about their successful recovery journeys and the positive impact our physical therapy treatments have had on their lives and mobility.</p>
+                            <p class="testimonial-one__text">Hear from our patients about their successful recovery journeys and the positive impact our physical therapy treatments have had on their lives and mobility. Our commitment to personalized care and evidence-based treatment approaches has helped thousands of patients achieve their recovery goals and return to the activities they love. These testimonials reflect the real experiences of individuals who have transformed their lives through dedicated physical therapy.</p>
                             <div class="testimonial-one__carrosel-box">
                                 <div class="testimonial-carousel-one swiper-container">
                                     <div class="swiper-wrapper">
                                         <!--Testimonial One Single Start-->
                                         <div class="swiper-slide">
                                             <div class="testimonial-one__single">
-                                                <div class="testimonial-one__quote-icon">
+                                                <!-- <div class="testimonial-one__quote-icon">
                                                     <img src="assets/images/icon/quote-icon.png" alt="">
-                                                </div>
+                                                </div> -->
                                                 <div class="testimonial-one__client-info">
                                                     <div class="testimonial-one__client-img">
                                                         <img src="assets/Physical Therapy Images/jesper-aggergaard-38Hg7GMTogo-unsplash.jpg" alt="">
@@ -907,9 +962,9 @@
                                         <!--Testimonial One Single Start-->
                                         <div class="swiper-slide">
                                             <div class="testimonial-one__single">
-                                                <div class="testimonial-one__quote-icon">
+                                                <!-- <div class="testimonial-one__quote-icon">
                                                     <img src="assets/images/icon/quote-icon.png" alt="">
-                                                </div>
+                                                </div> -->
                                                 <div class="testimonial-one__client-info">
                                                     <div class="testimonial-one__client-img">
                                                         <img src="assets/Physical Therapy Images/getty-images-FuF2Lnv7uvA-unsplash.jpg" alt="">
@@ -1088,6 +1143,7 @@
         <!--Blog One End -->
 
         <!--Brand One Start-->
+        <!--
         <section class="brand-one">
             <div class="container">
                 <div class="brand-carousel-one swiper-container">
@@ -1098,84 +1154,85 @@
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-1.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-2.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-2.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-3.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-3.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-4.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-4.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-5.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-5.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-1.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-1.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-2.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-2.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-3.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-3.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-4.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-4.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__img">
                                 <img src="assets/images/brand/brand-1-5.png" alt="">
                             </div>
                             <div class="swiper-slide__hover-img">
                                 <img src="assets/images/brand/brand-hover-1-5.png" alt="">
-                            </div><!-- /.swiper-slide -->
-                        </div><!-- /.swiper-slide -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        -->
         <!--Brand One End-->
 
         <!--CTA One Start-->
@@ -1206,14 +1263,75 @@
         </section> -->
         <!--CTA One End-->
 
+        <!--Contact Info Section Start-->
+        <section class="contact-info-section" id="contact" style="padding: 80px 0; background-color: #f8f9fa;">
+            <div class="container">
+                <div class="contact-page__top">
+                    <div class="row">
+                        <!--Contact Page Single Start-->
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="contact-page__single">
+                                <div class="contact-page__icon">
+                                    <span class="icon-location"></span>
+                                </div>
+                                <h3>Our Address</h3>
+                                <p>4517 Washington. mg Manchester,<br> Kentucky 39495</p>
+                            </div>
+                        </div>
+                        <!--Contact Page Single End-->
+                        <!--Contact Page Single Start-->
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="contact-page__single">
+                                <div class="contact-page__icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <h3><a href="mailto:needhelp@physiocare.com">needhelp@physiocare.com</a></h3>
+                                <p>Email us anytime for any kind of inquiry.</p>
+                            </div>
+                        </div>
+                        <!--Contact Page Single End-->
+                        <!--Contact Page Single Start-->
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="contact-page__single">
+                                <div class="contact-page__icon">
+                                    <span class="icon-phone"></span>
+                                </div>
+                                <h3>Hot: <a href="tel:20866660112">+208-666-0112</a></h3>
+                                <p>Call us for any kind of support, we will wait for it.</p>
+                            </div>
+                        </div>
+                        <!--Contact Page Single End-->
+                    </div>
+                </div>
+                
+                <!--Google Maps Section-->
+                <div class="google-maps-section" style="margin-top: 50px;">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title text-center" style="margin-bottom: 30px;">
+                                <h3 style="color: #333; font-size: 24px;">Find Us on the Map</h3>
+                            </div>
+                            <div class="google-maps-container" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-81.8921!3d33.5021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzA3LjYiTiA4McKwNTMnMzEuNiJX!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus&q=100+Georgia+Avenue+North+Augusta+SC+29841" 
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Google Maps Section End-->
+            </div>
+        </section>
+        <!--Contact Info Section End-->
+
         <!--Site Footer Start-->
         <footer class="site-footer">
-            <!-- <div class="site-footer__shape-1">
-                <img src="assets/images/shapes/site-footer-shape-1.png" alt="">
-            </div> -->
-            <!-- <div class="site-footer__shape-2">
-                <img src="assets/images/shapes/site-footer-shape-2.png" alt="">
-            </div> -->
             <div class="site-footer__top">
                 <div class="container">
                     <div class="site-footer__top-inner">
@@ -1230,7 +1348,6 @@
                                         <a href="#"><i class="icon-facebook"></i></a>
                                         <a href="#"><i class="icon-twitter"></i></a>
                                         <a href="#"><i class="icon-link-in"></i></a>
-                                        <a href="#"><i class="icon-youtube"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1274,7 +1391,7 @@
                                             </div>
                                             <div class="content">
                                                 <span>Location:</span>
-                                                <p>4517 Washington. mg Manchester,<br> Kentucky 39495</p>
+                                                <p>100 Georgia Avenue<br> North Augusta, SC 29841</p>
                                             </div>
                                         </li>
                                         <li>
@@ -1305,18 +1422,18 @@
                     </div>
                 </div>
             </div>
-            <div class="site-footer__bottom">
+            <!-- <div class="site-footer__bottom">
                 <div class="container">
                     <div class="site-footer__bottom-inner">
                         <p class="site-footer__bottom-text">© All Copyright 2024 by PhysioCare</p>
                         <ul class="list-unstyled site-footer__bottom-menu">
-                            <li><a href="about.html">Trams & Condition</a></li>
-                            <li><a href="about.html">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
                         </ul>
                         <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fas fa-arrow-up"></i></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </footer>
     </div><!-- /.page-wrapper -->
 
@@ -1351,14 +1468,14 @@
                     <a href="#" class="fab fa-instagram"></a>
                 </div>
             </div><!-- /.mobile-nav__top -->
-            <div class="main-menu__btn-box-outer">
+            <!-- <div class="main-menu__btn-box-outer">
                 <div class="main-menu__btn-box">
                     <a href="appointment.html" class="main-menu__btn thm-btn">
                         Appointment Now
                         <span class="icon-right-arrow"></span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- /.mobile-nav__wrapper -->
