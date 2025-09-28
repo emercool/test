@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Home One || Chirofind || Chirofind HTML5 Template </title>
+    <title> Home Two || Chirofind || Chirofind HTML5 Template </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Chirofind HTML5 Template " />
+    <meta name="description" content="Chirofind HTML5 Template" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
@@ -32,6 +31,98 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/chirofind.css" />
     <link rel="stylesheet" href="assets/css/chirofind-responsive.css" />
+    <style>
+        /* Custom styles for improved about section layout */
+        .about-one__img-box {
+            position: relative;
+            text-align: center;
+        }
+        
+        .about-one__img {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-one__img img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .about-one__img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-one__shape-1 {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            z-index: -1;
+        }
+        
+        .about-one__right {
+            padding-left: 30px;
+        }
+        
+        /* Main slider text styling for better visibility */
+        .main-slider__title {
+            color: #ffffff !important;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-weight: 700;
+        }
+        
+        .main-slider__title span {
+            color: #ffffff !important;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        
+        .main-slider__sub-title {
+            color: #ffffff !important;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+        
+        .main-slider__text {
+            color: #ffffff !important;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+        
+        @media (max-width: 991px) {
+            .about-one__right {
+                padding-left: 0;
+                margin-top: 40px;
+            }
+        }
+        
+        /* Services section - equal height styling */
+        .services-one__single {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .services-one__content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .services-one__text {
+            flex: 1;
+            margin-bottom: 0;
+        }
+        
+        .swiper-slide {
+            height: auto;
+        }
+        
+        .swiper-slide .services-one__single {
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,16 +136,16 @@
     <!-- preloader end  -->
 
     <div class="page-wrapper">
-        <header class="main-header-two">
-            <div class="main-menu-two__top">
-                <div class="main-menu-two__top-inner">
-                    <ul class="list-unstyled main-menu-two__contact-list">
+        <header class="main-header">
+            <div class="main-menu__top">
+                <div class="main-menu__top-inner">
+                    <ul class="list-unstyled main-menu__contact-list">
                         <li>
                             <div class="icon">
                                 <i class="icon-envolop"></i>
                             </div>
                             <div class="text">
-                                <p><a href="mailto:info@example.com">info@example.com</a>
+                                <p><a href="mailto:Fabian@horizonptw.com">Fabian@horizonptw.com</a>
                                 </p>
                             </div>
                         </li>
@@ -63,109 +154,100 @@
                                 <i class="icon-pin"></i>
                             </div>
                             <div class="text">
-                                <p>8502 Preston Rd. Inglewood</p>
+                                <p>210 East Martintown Road, North Augusta, SC 29841</p>
                             </div>
                         </li>
                     </ul>
-                    <div class="main-menu-two__top-right">
-                        <div class="main-menu-two__social-box">
-                            <div class="main-menu-two__social-box-inner">
-                                <h4 class="main-menu-two__social-box-title">Follow Us:</h4>
-                                <div class="main-menu-two__social">
-                                    <a href="#"><i class="icon-facebook"></i></a>
-                                    <a href="#"><i class="icon-twitter"></i></a>
-                                    <a href="#"><i class="icon-link-in"></i></a>
-                                    <a href="#"><i class="icon-youtube"></i></a>
+                    <div class="main-menu__top-right">
+                        <div class="main-menu__social-box">
+                            <div class="main-menu__social-box-inner">
+                                <h4 class="main-menu__social-box-title">Follow Us:</h4>
+                                <div class="main-menu__social">
+                                    <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><i class="icon-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <nav class="main-menu main-menu-two">
-                <div class="main-menu-two__wrapper">
-                    <div class="main-menu-two__wrapper-inner">
-                        <div class="site-logo main-menu-two__logo">
-                            <a href="index.html"><img src="assets/images/resources/logo-2.svg" alt=""></a>
-                        </div>
-                        <div class="main-menu-two__menu-box">
-                            <div class="main-menu-two__main-menu-box">
-                                <ul class="main-menu__list">
-                                    <li class="dropdown">
-                                        <a href="#">Home </a>
-                                        <ul>
-                                            <li><a href="index.html">Home One</a></li>
-                                            <li><a href="index2.html">Home Two</a></li>
-                                            <li><a href="index3.html">Home Three</a></li>
-                                            <li><a href="index4.html">Home Four</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Services</a>
-                                        <ul>
-                                            <li><a href="services1.html">Services V-1</a></li>
-                                            <li><a href="services2.html">Services V-2</a></li>
-                                            <li><a href="trained-therapists.html">Trained Therapists</a></li>
-                                            <li><a href="massages-therapy.html">Massages Therapy</a></li>
-                                            <li><a href="chiropractic-care.html">Chiropractic Care</a></li>
-                                            <li><a href="laser-therapy.html">Laser Therapy</a></li>
-                                            <li><a href="physical-rehab.html">Physical Rehab</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="team1.html">Team V-1</a></li>
-                                            <li><a href="team2.html">Team V-2</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="portfolio.html">Portfolio</a></li>
-                                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                            <li><a href="pricing.html">Pricing Plans</a></li>
-                                            <li><a href="appointment.html">Appointment</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="404.html">404 Error</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Shop</a>
-                                        <ul>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-details.html">Shop Details</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog Gird</a></li>
-                                            <li><a href="blog-list.html">Blog List</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
+            <nav class="main-menu">
+                <div class="main-menu__wrapper">
+                    <div class="main-menu__wrapper-inner">
+                        <div class="main-menu__left">
+                            <div class="main-menu__logo">
+                                <a href="index.html"><img src="PNG LOGOS/HORIZON_LOGO_1COLORREVERSE.png" width="150" height="40" alt=""></a>
                             </div>
                         </div>
-                        <div class="main-menu-two__right">
-                            <div class="main-menu__search-cart-box">
-                                <a href="#" class="main-menu__search search-bar-btn icon-search"></a>
-                                <a href="cart.html" class="main-menu__cart  icon-cart"></a>
-                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                            </div>
-                            <div class="main-menu-two__call">
-                                <div class="main-menu-two__call-icon">
-                                    <span class="icon-call-2"></span>
+                        <div class="main-menu__right">
+                            <div class="main-menu__menu-box-and-btn-box">
+                                <div class="main-menu__menu-box">
+                                    <div class="main-menu__main-menu-box">
+                                        <ul class="main-menu__list">
+                                            <!-- <li class="dropdown">
+                                                <a href="#">Home </a>
+                                                <ul>
+                                                    <li><a href="index.html">Home One</a></li>
+                                                    <li><a href="index.html">Home Two</a></li>
+                                                    <li><a href="index3.html">Home Three</a></li>
+                                                    <li><a href="index4.html">Home Four</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <li>
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#services">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#team">Team</a>
+                                            </li>
+                                            <!-- <li class="dropdown">
+                                                <a href="#">Shop</a>
+                                                <ul>
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="cart.html">Cart</a></li>
+                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <!-- <li class="dropdown">
+                                                <a href="#">Blog</a>
+                                                <ul>
+                                                    <li><a href="blog.html">Blog Gird</a></li>
+                                                    <li><a href="blog-list.html">Blog List</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <li>
+                                                <a href="#contact">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="main-menu-two__call-number">
-                                    <p>Call Us Now</p>
-                                    <h5><a href="tel:2085550112">+208-555-0112</a></h5>
+                                <div class="menu-icons-button">
+                                    <!-- <div class="main-menu__search-cart-box">
+                                        <a href="#" class="main-menu__search search-bar-btn icon-search"></a>
+                                        <a href="cart.html" class="main-menu__cart  icon-cart"></a>
+                                        <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    </div> -->
+                                    <!-- <div class="main-menu__btn-box-outer">
+                                        <div class="main-menu__btn-box">
+                                            <a href="appointment.html" class="main-menu__btn thm-btn">
+                                                Appointment Now
+                                                <span class="icon-right-arrow"></span>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                    <div class="main-menu-two__call">
+                                        <div class="main-menu-two__call-icon">
+                                            <span class="icon-call-2"></span>
+                                        </div>
+                                        <div class="main-menu-two__call-number">
+                                            <p>Call Us Now</p>
+                                            <h5><a href="tel:8036136099">803-613-6099</a></h5>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -174,126 +256,186 @@
             </nav>
         </header>
 
-        <div class="stricky-header stricked-menu main-menu main-menu-two">
+        <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div>
         </div><!-- /.stricky-header -->
 
-        <!--Banner One Start -->
-        <section class="banner-one">
-            <div class="banner-one__shape-1 float-bob-y">
-                <img src="assets/images/shapes/banner-one-shape-1.png" alt="">
-            </div>
-            <div class="banner-one__shape-2 float-bob-x">
-                <img src="assets/images/shapes/banner-one-shape-2.png" alt="">
-            </div>
-            <div class="banner-one__shape-3 img-bounce">
-                <img src="assets/images/shapes/banner-one-shape-3.png" alt="">
-            </div>
-            <div class="banner-one__shape-4 float-bob-y">
-                <img src="assets/images/shapes/banner-one-shape-4.png" alt="">
-            </div>
-            <div class="banner-one__shape-6"></div>
-            <div class="container">
-                <div class="banner-one__inner">
-                    <div class="banner-one__content">
-                        <div class="banner-one__sub-title-box">
-                            <div class="banner-one__sub-title-shape"></div>
-                            <p class="banner-one__sub-title">Chiropractic Care in Manhattan</p>
+        <!--Main Slider Start-->
+        <section class="main-slider">
+            <div class="swiper-container banner-slider-one">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="main-slider__shape-1"></div>
+                        <div class="main-slider__shape-2"></div>
+                        <div class="main-slider__shape-3"></div>
+                        <div class="main-slider__shape-4"></div>
+                        <div class="main-slider__shape-5 float-bob-y">
+                            <img src="assets/images/shapes/main-slider-shape-5.png" alt="">
                         </div>
-                        <h2 class="banner-one__title">A Body in Balance <br> Is Free From Pain</h2>
-                        <div class="banner-one__btn-and-satisfied-patient">
-                            <div class="banner-one__btn-box">
-                                <a href="services1.html" class="banner-one__btn thm-btn">View Services<span class="icon-right-arrow"></span></a>
-                            </div>
-                            <div class="banner-one__satisfied-patient">
-                                <ul class="banner-one__satisfied-patient-list list-unstyled">
-                                    <li>
-                                        <div class="banner-one__satisfied-patient-img">
-                                            <img src="assets/images/resources/banner-one-satisfied-patient-img-1-1.png" alt="">
+                        <div class="main-slider__shape-6 float-bob-y">
+                            <img src="assets/images/shapes/main-slider-shape-6.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-7 float-bob-x">
+                            <img src="assets/images/shapes/main-slider-shape-7.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-8">
+                            <img src="assets/images/shapes/main-slider-shape-8.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-9">
+                            <img src="assets/images/shapes/main-slider-shape-9.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-10">
+                            <img src="assets/images/shapes/main-slider-shape-10.png" alt="">
+                        </div>
+                        <div class="main-slider__img">
+                            <img src="assets/Physical Therapy Images/nate-johnston-WEfD8q8oz7U-unsplash.jpg" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="main-slider__content">
+                                        <div class="main-slider__sub-title-box">
+                                            <div class="main-slider__sub-title-shape"></div>
+                                            <p class="main-slider__sub-title">Developing Strong Pain Free People</p>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="banner-one__satisfied-patient-img">
-                                            <img src="assets/images/resources/banner-one-satisfied-patient-img-1-2.png" alt="">
+                                        <h2 class="main-slider__title">Welcome to Best <br> <span>Health</span> Life</h2>
+                                        <p class="main-slider__text"> We are a leading Physical Therapy Practice providing comprehensive rehabilitation <br> and pain relief for patients across the world.</p>
+                                        <!-- <div class="main-slider__btn-box">
+                                            <a href="services1.html" class="main-slider__btn thm-btn">View Services<span class="icon-right-arrow"></span></a>
+                                        </div> -->
+                                        <div class="main-slider__rounded-text">
+                                            <a href="https://www.youtube.com/watch?v=To9VzfdWYlc"
+                                                class="video-popup main-slider__curved-circle-box">
+                                                <div class="curved-circle-2">
+                                                    <span class="curved-circle--item">
+                                                        - play intro video - play intro video
+                                                    </span>
+                                                </div><!-- /.curved-circle -->
+                                                <div class="main-slider__icon">
+                                                    <span class="icon-play"></span>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="banner-one__satisfied-patient-img">
-                                            <img src="assets/images/resources/banner-one-satisfied-patient-img-1-3.png" alt="">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="banner-one__satisfied-patient-img">
-                                            <img src="assets/images/resources/banner-one-satisfied-patient-img-1-4.png" alt="">
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="banner-one__satisfied-patient-content">
-                                    <div class="banner-one__satisfied-patient-star">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
                                     </div>
-                                    <p class="banner-one__satisfied-patient-title">satisfied Patient</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="banner-one__img-box">
-                        <div class="banner-one__img">
-                            <img src="assets/images/resources/banner-one-img-1.png" alt="">
-                            <div class="banner-one__img-shape-1">
-                                <img src="assets/images/shapes/banner-one-img-shape-1.png" alt="">
-                            </div>
-                            <div class="banner-one__img-shape-2">
-                                <img src="assets/images/shapes/banner-one-img-shape-2.png" alt="">
-                            </div>
-                            <div class="banner-one__pain-point-1">
-                                <div class="banner-one__pain-markar">
-                                    <i class="ripple"></i>
-                                </div>
-                                <div class="banner-one__popup-box">
-                                    <div class="banner-one__popup">
-                                        <div class="banner-one__popup-inner">
-                                            <h5 class="banner-one__popup-title">Elbow Pain</h5>
+
+                    <div class="swiper-slide">
+                        <div class="main-slider__shape-1"></div>
+                        <div class="main-slider__shape-2"></div>
+                        <div class="main-slider__shape-3"></div>
+                        <div class="main-slider__shape-4"></div>
+                        <div class="main-slider__shape-5 float-bob-y">
+                            <img src="assets/images/shapes/main-slider-shape-5.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-6 float-bob-y">
+                            <img src="assets/images/shapes/main-slider-shape-6.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-7 float-bob-x">
+                            <img src="assets/images/shapes/main-slider-shape-7.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-8">
+                            <img src="assets/images/shapes/main-slider-shape-8.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-9">
+                            <img src="assets/images/shapes/main-slider-shape-9.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-10">
+                            <img src="assets/images/shapes/main-slider-shape-10.png" alt="">
+                        </div>
+                        <div class="main-slider__img">
+                            <img src="assets/Physical Therapy Images/getty-images--_y2VxvvGqs-unsplash.jpg" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="main-slider__content">
+                                        <div class="main-slider__sub-title-box">
+                                            <div class="main-slider__sub-title-shape"></div>
+                                            <p class="main-slider__sub-title">Developing Strong Pain Free People</p>
+                                        </div>
+                                        <h2 class="main-slider__title">Farewell to Pain <br> <span>Welcome</span> Freedom</h2>
+                                        <p class="main-slider__text"> We are a leading Physical Therapy Practice providing evidence-based treatment <br> and recovery solutions for patients worldwide.</p>
+                                        <!-- <div class="main-slider__btn-box">
+                                            <a href="services1.html" class="main-slider__btn thm-btn">View Services<span
+                                                    class="icon-right-arrow"></span></a>
+                                        </div> -->
+                                        <div class="main-slider__rounded-text">
+                                            <a href="https://www.youtube.com/watch?v=To9VzfdWYlc"
+                                                class="video-popup main-slider__curved-circle-box">
+                                                <div class="curved-circle-2">
+                                                    <span class="curved-circle--item">
+                                                        - play intro video - play intro video
+                                                    </span>
+                                                </div><!-- /.curved-circle -->
+                                                <div class="main-slider__icon">
+                                                    <span class="icon-play"></span>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="banner-one__pain-point-1 banner-one__pain-point-2">
-                                <div class="banner-one__pain-markar banner-one__pain-markar-2">
-                                    <i class="ripple"></i>
-                                </div>
-                                <div class="banner-one__popup-box">
-                                    <div class="banner-one__popup">
-                                        <div class="banner-one__popup-inner">
-                                            <h5 class="banner-one__popup-title">Shoulder Pain</h5>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="main-slider__shape-1"></div>
+                        <div class="main-slider__shape-2"></div>
+                        <div class="main-slider__shape-3"></div>
+                        <div class="main-slider__shape-4"></div>
+                        <div class="main-slider__shape-5 float-bob-y">
+                            <img src="assets/images/shapes/main-slider-shape-5.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-6 float-bob-y">
+                            <img src="assets/images/shapes/main-slider-shape-6.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-7 float-bob-x">
+                            <img src="assets/images/shapes/main-slider-shape-7.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-8">
+                            <img src="assets/images/shapes/main-slider-shape-8.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-9">
+                            <img src="assets/images/shapes/main-slider-shape-9.png" alt="">
+                        </div>
+                        <div class="main-slider__shape-10">
+                            <img src="assets/images/shapes/main-slider-shape-10.png" alt="">
+                        </div>
+                        <div class="main-slider__img">
+                            <img src="assets/Physical Therapy Images/annie-spratt--l-eemJU0vE-unsplash.jpg" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="main-slider__content">
+                                        <div class="main-slider__sub-title-box">
+                                            <div class="main-slider__sub-title-shape"></div>
+                                            <p class="main-slider__sub-title">Developing Strong Pain Free People</p>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="banner-one__pain-point-1 banner-one__pain-point-3">
-                                <div class="banner-one__pain-markar banner-one__pain-markar-3">
-                                    <i class="ripple"></i>
-                                </div>
-                                <div class="banner-one__popup-box">
-                                    <div class="banner-one__popup">
-                                        <div class="banner-one__popup-inner">
-                                            <h5 class="banner-one__popup-title">Lumbar Pain</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="banner-one__pain-point-1 banner-one__pain-point-4">
-                                <div class="banner-one__pain-markar banner-one__pain-markar-4">
-                                    <i class="ripple"></i>
-                                </div>
-                                <div class="banner-one__popup-box">
-                                    <div class="banner-one__popup">
-                                        <div class="banner-one__popup-inner">
-                                            <h5 class="banner-one__popup-title">Hand Pain</h5>
+
+                                        <h2 class="main-slider__title">Welcome Best <br> <span>Physical Therapy</span> Care</h2>
+
+                                        <p class="main-slider__text"> We are a leading Physical Therapy Practice providing personalized treatment <br> and rehabilitation programs for optimal recovery.</p>
+                                        
+                                        <!-- <div class="main-slider__btn-box">
+                                            <a href="services1.html" class="main-slider__btn thm-btn">View Services<span class="icon-right-arrow"></span></a>
+                                        </div> -->
+                                        <div class="main-slider__rounded-text">
+                                            <a href="https://www.youtube.com/watch?v=To9VzfdWYlc"
+                                                class="video-popup main-slider__curved-circle-box">
+                                                <div class="curved-circle-2">
+                                                    <span class="curved-circle--item">
+                                                        - play intro video - play intro video
+                                                    </span>
+                                                </div><!-- /.curved-circle -->
+                                                <div class="main-slider__icon">
+                                                    <span class="icon-play"></span>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -301,387 +443,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
-        <!--Banner One End -->
+        <!--Main Slider End-->
 
-        <!--Appointment One Start -->
-        <section class="appointment-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="100ms">
-                        <div class="appointment-one__left">
-                            <div class="appointment-one__left-content">
-                                <h4 class="appointment-one__left-content-title">New Patients welcome</h4>
-                                <p class="appointment-one__left-content-text">We denounce with righteous is indignation
-                                    and dislike and demoralized by the charms of pleasure the.</p>
-                                <div class="appointment-one__btn-box">
-                                    <a href="appointment.html" class="appointment-one__btn thm-btn">Appointment Now<span
-                                            class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="300ms">
-                        <div class="appointment-one__right">
-                            <div class="appointment-one__right-content">
-                                <h4 class="appointment-one__right-content-title">Office Hours</h4>
-                                <ul class="list-unstyled appointment-one__office-hours-list">
-                                    <li>
-                                        <p>Monday and Wednesday</p>
-                                        <p>8 AM - 2 PM, 4 PM - 7 PM</p>
-                                    </li>
-                                    <li>
-                                        <p>Friday</p>
-                                        <p>Closed</p>
-                                    </li>
-                                    <li>
-                                        <p>Saturday</p>
-                                        <p>9 AM - 2 PM</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!--Services One  Start -->
+        <section class="services-one" id="services">
+            <div class="services-one__shape-2 float-bob-x">
+                <img src="assets/images/shapes/services-one-shape-2.png" alt="">
             </div>
-        </section>
-        <!--Appointment One End -->
-
-        <!--Services Two Start -->
-        <section class="services-two">
-            <div class="services-two__shape-1 float-bob-x">
-                <img src="assets/images/shapes/services-two-shape-1.png" alt="">
-            </div>
-            <div class="services-two__shape-2 float-bob-y">
-                <img src="assets/images/shapes/services-two-shape-2.png" alt="">
-            </div>
-            <div class="services-two__shape-3 img-bounce"></div>
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="section-title__tagline-box">
-                        <div class="section-title__tagline-shape-1"></div>
-                        <span class="section-title__tagline">Our Services</span>
-                    </div>
-                    <h2 class="section-title__title">Chiropractic Care in Manhattan</h2>
-                </div>
-                <div class="row">
-                    <!--Services Two Single Start -->
-                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-duration=".9s" data-wow-delay="100ms">
-                        <div class="services-two__single">
-                            <div class="services-two__img">
-                                <img src="assets/images/services/services-2-1.jpg" alt="">
-                            </div>
-                            <div class="services-two__content">
-                                <h3 class="services-two__title"><a href="massages-therapy.html">Massage Therapy</a></h3>
-                                <p class="services-two__text">Aorem ipsum sit amet consectetur adipiscing donec pulvinar
-                                    tortor</p>
-                                <div class="services-two__icon">
-                                    <span class="icon-leg"></span>
-                                </div>
-                                <div class="services-two__btn-box">
-                                    <a href="massages-therapy.html" class="services-two__btn thm-btn">Read More<span
-                                            class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Services Two Single End -->
-                    <!--Services Two Single Start -->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-duration=".9s" data-wow-delay="200ms">
-                        <div class="services-two__single">
-                            <div class="services-two__img">
-                                <img src="assets/images/services/services-2-2.jpg" alt="">
-                            </div>
-                            <div class="services-two__content">
-                                <h3 class="services-two__title"><a href="chiropractic-care.html">Chiropractic
-                                        Therapy</a>
-                                </h3>
-                                <p class="services-two__text">Aorem ipsum sit amet consectetur adipiscing donec pulvinar
-                                    tortor</p>
-                                <div class="services-two__icon">
-                                    <span class="icon-trusted"></span>
-                                </div>
-                                <div class="services-two__btn-box">
-                                    <a href="chiropractic-care.html" class="services-two__btn thm-btn">Read More<span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Services Two Single End -->
-                    <!--Services Two Single Start -->
-                    <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-duration=".9s" data-wow-delay="300ms">
-                        <div class="services-two__single">
-                            <div class="services-two__img">
-                                <img src="assets/images/services/services-2-3.jpg" alt="">
-                            </div>
-                            <div class="services-two__content">
-                                <h3 class="services-two__title"><a href="trained-therapists.html">Trained Therapists</a>
-                                </h3>
-                                <p class="services-two__text">Aorem ipsum sit amet consectetur adipiscing donec pulvinar tortor</p>
-                                <div class="services-two__icon">
-                                    <span class="icon-trained"></span>
-                                </div>
-                                <div class="services-two__btn-box">
-                                    <a href="trained-therapists.html" class="services-two__btn thm-btn">Read More<span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Services Two Single End -->
-                </div>
-            </div>
-        </section>
-        <!--Services Two End -->
-
-        <!--About Two Start -->
-        <section class="about-two">
-            <div class="about-two__shape-2"></div>
-            <div class="about-two__shape-3"></div>
-            <div class="about-two__shape-4"></div>
-            <div class="about-two__shape-5"></div>
-            <div class="about-two__shape-6">
-                <img src="assets/images/shapes/about-two-shape-6.png" alt="">
-            </div>
-            <div class="about-two__shape-7 float-bob-y">
-                <img src="assets/images/shapes/about-two-shape-7.png" alt="">
-            </div>
-            <div class="about-two__shape-8 float-bob-x">
-                <img src="assets/images/shapes/about-two-shape-8.png" alt="">
+            <div class="services-one__shape-3 float-bob-y">
+                <img src="assets/images/shapes/services-one-shape-3.png" alt="">
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="about-two__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-                            <div class="about-two__img-box">
-                                <div class="about-two__img">
-                                    <img src="assets/images/resources/about-two-img-1.jpg" alt="">
-                                </div>
-                                <div class="about-two__img-two">
-                                    <img src="assets/images/resources/about-two-img-2.jpg" alt="">
-                                </div>
-                                <div class="about-two__shape-1"></div>
-                                <div class="about-two__experience">
-                                    <div class="about-two__experience-shape-1">
-                                        <img src="assets/images/shapes/about-two-experience-shape-1.png" alt="">
-                                    </div>
-                                    <div class="about-two__experience-icon">
-                                        <span class="icon-award"></span>
-                                    </div>
-                                    <div class="about-two__experience-content">
-                                        <div class="about-two__experience-content-count count-box">
-                                            <h3 class="count-text" data-stop="25" data-speed="1500">00</h3>
-                                            <span class="about-two__experience-content-count-plus">+</span>
-                                        </div>
-                                        <p class="about-two__experience-content-text">Years Experience</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="about-two__right">
-                            <div class="section-title text-left">
-                                <div class="section-title__tagline-box">
-                                    <div class="section-title__tagline-shape-1"></div>
-                                    <span class="section-title__tagline">About Us</span>
-                                </div>
-                                <h2 class="section-title__title">Welcome to Chirofind Family Chiropractic</h2>
-                            </div>
-                            <p class="about-two__text-1">It is a long established fact the reader will be distracted the
-                                readable letters. content of a page when looking at layout the point of using lorem the
-                                Ipsum less normal distribution of letters.</p>
-                            <ul class="list-unstyled about-two__points">
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-chiropractic"></span>
-                                    </div>
-                                    <div class="content">
-                                        <h5><a href="about.html">Trusted Clinic</a></h5>
-                                        <p>Scelerisque augue the consequat sodales</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-expert"></span>
-                                    </div>
-                                    <div class="content">
-                                        <h5><a href="about.html">Expert Therapist</a></h5>
-                                        <p>Scelerisque augue the consequat sodales</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="about-two__btn-and-sign">
-                                <div class="about-two__btn-box">
-                                    <a href="about.html" class="about-two__btn thm-btn">About Us<span class="icon-right-arrow"></span></a>
-                                </div>
-                                <div class="about-two__sing">
-                                    <img src="assets/images/resources/about-two-sing.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--About Two End -->
-
-        <!--Counter One Start-->
-        <section class="counter-one">
-            <div class="container">
-                <div class="counter-one__inner">
-                    <div class="counter-one__shape-1 float-bob-y">
-                        <img src="assets/images/shapes/counter-one-shape-1.png" alt="">
-                    </div>
-                    <div class="counter-one__shape-2 float-bob-x">
-                        <img src="assets/images/shapes/counter-one-shape-2.png" alt="">
-                    </div>
-                    <ul class="list-unstyled counter-one__list">
-                        <li>
-                            <div class="counter-one__icon">
-                                <span class="icon-satisfied"></span>
-                            </div>
-                            <div class="counter-one__content">
-                                <div class="counter-one__count count-box">
-                                    <h3 class="count-text" data-stop="25" data-speed="1500">00</h3>
-                                </div>
-                                <p class="counter-one__text">Satisfied Patients</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="counter-one__icon">
-                                <span class="icon-finished"></span>
-                            </div>
-                            <div class="counter-one__content">
-                                <div class="counter-one__count count-box">
-                                    <h3 class="count-text" data-stop="600" data-speed="1500">00</h3>
-                                    <span class="counter-one__count-plus">+</span>
-                                </div>
-                                <p class="counter-one__text">Finished Projects</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="counter-one__icon">
-                                <span class="icon-experts"></span>
-                            </div>
-                            <div class="counter-one__content">
-                                <div class="counter-one__count count-box">
-                                    <h3 class="count-text" data-stop="250" data-speed="1500">00</h3>
-                                    <span class="counter-one__count-plus">+</span>
-                                </div>
-                                <p class="counter-one__text">Experts Therapist</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="counter-one__icon">
-                                <span class="icon-award-two"></span>
-                            </div>
-                            <div class="counter-one__content">
-                                <div class="counter-one__count count-box">
-                                    <h3 class="count-text" data-stop="5690" data-speed="1500">00</h3>
-                                </div>
-                                <p class="counter-one__text">Award Got</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!--Counter One End -->
-
-        <!--Process One Start -->
-        <section class="process-one">
-            <div class="process-one__shape-1 float-bob-y">
-                <img src="assets/images/shapes/process-one-shape-1.png" alt="">
-            </div>
-            <div class="process-one__shape-2 float-bob-x">
-                <img src="assets/images/shapes/process-one-shape-2.png" alt="">
-            </div>
-            <div class="process-one__shape-3 zoominout"></div>
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="section-title__tagline-box">
-                        <div class="section-title__tagline-shape-1"></div>
-                        <span class="section-title__tagline">Therapy Process</span>
-                    </div>
-                    <h2 class="section-title__title">Step to Get Physiotherapy</h2>
-                </div>
-                <div class="process-one__inner">
-                    <div class="process-one__line-1">
-                        <img src="assets/images/shapes/process-one-line-1.png" alt="">
-                    </div>
-                    <div class="row">
-                        <!--Process One Single Start -->
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="process-one__single">
-                                <div class="process-one__icon-box">
-                                    <div class="process-one__count"></div>
-                                    <div class="process-one__icon">
-                                        <span class="icon-book"></span>
-                                    </div>
-                                </div>
-                                <div class="process-one__content">
-                                    <h4 class="process-one__title">Make an Appointment</h4>
-                                    <p class="process-one__text">In a free hour, when our power of choice is
-                                        untrammelled
-                                        and when nothing prevents dolor sit amet, consectetur</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Process One Single End -->
-                        <!--Process One Single Start -->
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="process-one__single">
-                                <div class="process-one__icon-box">
-                                    <div class="process-one__count"></div>
-                                    <div class="process-one__icon">
-                                        <span class="icon-team"></span>
-                                    </div>
-                                </div>
-                                <div class="process-one__content">
-                                    <h4 class="process-one__title">Get Consultation</h4>
-                                    <p class="process-one__text">Integer feugiat tortor non there are many other nullam
-                                        In a free hour, when our power of choice is untrammelled</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Process One Single End -->
-                        <!--Process One Single Start -->
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="process-one__single">
-                                <div class="process-one__icon-box">
-                                    <div class="process-one__count"></div>
-                                    <div class="process-one__icon">
-                                        <span class="icon-like"></span>
-                                    </div>
-                                </div>
-                                <div class="process-one__content">
-                                    <h4 class="process-one__title">Enjoy Our Therapy</h4>
-                                    <p class="process-one__text">In a free hour, when our power of choice is untrammelled and when nothing prevents dolor sit amet, consectetur</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Process One Single End -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Process One End -->
-
-        <!--Testimonial Two Start -->
-        <section class="testimonial-two">
-            <div class="testimonial-two__bg"
-                style="background-image: url(assets/images/backgrounds/testimonial-two-bg.jpg);"></div>
-            <div class="container">
-                <div class="testimonial-two__top">
+                <div class="services-one__top">
                     <div class="section-title text-left">
                         <div class="section-title__tagline-box">
                             <div class="section-title__tagline-shape-1"></div>
-                            <span class="section-title__tagline">Testimonials</span>
+                            <span class="section-title__tagline">Our Services</span>
                         </div>
-                        <h2 class="section-title__title">Our Client Feedback</h2>
+                        <h2 class="section-title__title">Specialized Physical Therapy Services</h2>
                     </div>
-                    <div class="testimonial-two__nav">
+                    <div class="services-carousel-nav">
                         <div class="swiper-button-prev">
                             <i class="icon-angle-right"></i>
                         </div>
@@ -690,208 +474,446 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-two__bottom">
-                    <div class="testimonial-carousel-two swiper-container">
+                <div class="services-one__bottom">
+                    <div class="service-carousel-one swiper-container">
                         <div class="swiper-wrapper">
-
-                            <!--Testimonial Two Single Start-->
+                            <!--Services One Single Start-->
                             <div class="swiper-slide">
-                                <div class="testimonial-two__single">
-                                    <div class="testimonial-two__client-img">
-                                        <img src="assets/images/testimonial/testimonial-2-1.jpg" alt="">
+                                <div class="services-one__single">
+                                    <div class="services-one__shape-1">
+                                        <img src="assets/images/shapes/services-one-shape-1.png" alt="">
                                     </div>
-                                    <div class="testimonial-two__ratting">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
+                                    <div class="services-one__img-box">
+                                        <div class="services-one__img">
+                                            <img src="assets/Physical Therapy Images/getty-images-7ds2AvejCsg-unsplash.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <p class="testimonial-two__text">Penatibus et magnis dis parturient
-                                        montes, nascetur ridiculus mus. Ut id lorem ac enim vestibulum
-                                        blandit nec sit amet felis. Fusce quis diam odio. Cras mattis mi
-                                        quis tincidunt</p>
-                                    <div class="testimonial-two__client-info">
-                                        <h5 class="testimonial-two__client-name"><a href="#">Esther Howard</a></h5>
-                                        <p class="testimonial-two__client-sub-title">Nursing Assistant</p>
-                                    </div>
-                                    <div class="testimonial-two__quote-icon">
-                                        <img src="assets/images/icon/quote-icon.png" alt="">
+                                    <div class="services-one__content">
+                                        <h3 class="services-one__title"><a href="physical-rehab.html">Women's Health & Physical Therapy</a>
+                                        </h3>
+                                        <p class="services-one__text">Led by Dr. Susannah Azofeifa PT, DPT, our specialized women's health program focuses on treating pregnant and postpartum women, pelvic floor dysfunction, and pregnancy-related pain. We provide personalized care for women through every stage of life, combining evidence-based physical therapy with dry needling techniques. Our approach emphasizes movement as medicine, helping women move with confidence and strength while addressing unique health challenges specific to women's bodies and life transitions.</p>
+                                        <!-- <div class="services-one__btn-box">
+                                            <a href="physical-rehab.html" class="services-one__btn thm-btn">Read
+                                                More<span class="icon-right-arrow"></span></a>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
-                            <!--Testimonial Two Single End-->
-                            <!--Testimonial Two Single Start-->
+                            <!--Services One Single End-->
+                            <!--Services One Single Start-->
                             <div class="swiper-slide">
-                                <div class="testimonial-two__single">
-                                    <div class="testimonial-two__client-img">
-                                        <img src="assets/images/testimonial/testimonial-2-2.jpg" alt="">
+                                <div class="services-one__single">
+                                    <div class="services-one__shape-1">
+                                        <img src="assets/images/shapes/services-one-shape-1.png" alt="">
                                     </div>
-                                    <div class="testimonial-two__ratting">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
+                                    <div class="services-one__img-box">
+                                        <div class="services-one__img">
+                                            <img src="assets/Physical Therapy Images/getty-images-FGJu0wRWIH8-unsplash.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <p class="testimonial-two__text">Consectetur adipiscing elit. Integer nunc viverra
-                                        laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc
-                                        viverra Aenean pulvinar maximus leo</p>
-                                    <div class="testimonial-two__client-info">
-                                        <h5 class="testimonial-two__client-name"><a href="#">Kathryn Murphy</a></h5>
-                                        <p class="testimonial-two__client-sub-title">Web Designer</p>
-                                    </div>
-                                    <div class="testimonial-two__quote-icon">
-                                        <img src="assets/images/icon/quote-icon.png" alt="">
+                                    <div class="services-one__content">
+                                        <h3 class="services-one__title"><a href="laser-therapy.html">Sports Rehabilitation & CrossFit Training</a>
+                                        </h3>
+                                        <p class="services-one__text">Led by Dr. Fabian Azofeifa PT, DPT, our sports rehabilitation program combines his expertise as a certified CrossFit Level 1 Trainer with advanced physical therapy techniques. With a strong athletic background including collegiate soccer and Olympic weightlifting, Dr. Fabian provides specialized care for athletes and CrossFit enthusiasts. We treat sports injuries, post-surgical recovery, and performance optimization using manual therapy, movement analysis, and progressive exercise protocols tailored to each individual's athletic goals and training demands.</p>
+                                        <!-- <div class="services-one__btn-box">
+                                            <a href="laser-therapy.html" class="services-one__btn thm-btn">Read
+                                                More<span class="icon-right-arrow"></span></a>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
-                            <!--Testimonial Two Single End-->
-                            <!--Testimonial Two Single Start-->
+                            <!--Services One Single End-->
+                            <!--Services One Single Start-->
                             <div class="swiper-slide">
-                                <div class="testimonial-two__single">
-                                    <div class="testimonial-two__client-img">
-                                        <img src="assets/images/testimonial/testimonial-2-3.jpg" alt="">
+                                <div class="services-one__single">
+                                    <div class="services-one__shape-1">
+                                        <img src="assets/images/shapes/services-one-shape-1.png" alt="">
                                     </div>
-                                    <div class="testimonial-two__ratting">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
+                                    <div class="services-one__img-box">
+                                        <div class="services-one__img">
+                                            <img src="assets/Physical Therapy Images/getty-images-af4buCLq_Bs-unsplash.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <p class="testimonial-two__text">Penatibus et magnis dis parturient
-                                        montes, nascetur ridiculus mus. Ut id lorem ac enim vestibulum
-                                        blandit nec sit amet felis. Fusce quis diam odio. Cras mattis mi
-                                        quis tincidunt</p>
-                                    <div class="testimonial-two__client-info">
-                                        <h5 class="testimonial-two__client-name"><a href="#">Albert Flores</a></h5>
-                                        <p class="testimonial-two__client-sub-title">Medical Assistant</p>
-                                    </div>
-                                    <div class="testimonial-two__quote-icon">
-                                        <img src="assets/images/icon/quote-icon.png" alt="">
+                                    <div class="services-one__content">
+                                        <h3 class="services-one__title"><a href="physical-rehab.html">Manual Therapy & Pain Management</a></h3>
+                                        <p class="services-one__text">Our manual therapy and pain management program combines the expertise of both Dr. Fabian and Dr. Susannah Azofeifa, offering over 25 years of combined experience in treating chronic pain conditions. We utilize advanced manual therapy techniques, dry needling, and evidence-based interventions to address the root causes of persistent pain. Our personalized approach includes pain neuroscience education, therapeutic exercises, and long-term management strategies. With Daniela's compassionate patient care coordination, we ensure comprehensive support throughout your pain management journey, treating conditions from chronic back pain to complex musculoskeletal disorders.</p>
+                                        <!-- <div class="services-one__btn-box">
+                                            <a href="physical-rehab.html" class="services-one__btn thm-btn">Read More<span class="icon-right-arrow"></span></a>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
-                            <!--Testimonial Two Single End-->
+                            <!--Services One Single End-->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Testimonial Two End -->
+        <!--Services One End -->
 
-        <!--Team Two Start -->
-        <section class="team-two">
-            <div class="team-two__shape-1"></div>
-            <div class="team-two__shape-2"></div>
-            <div class="team-two__shape-3"></div>
-            <div class="team-two__shape-4"></div>
-            <div class="team-two__shape-5 zoominout">
-                <img src="assets/images/shapes/team-two-shape-5.png" alt="">
+        <!--About One Start -->
+        <section class="about-one">
+            <div class="about-one__shape-2 float-bob-x">
+                <img src="assets/images/shapes/about-one-shape-2.png" alt="">
             </div>
-            <div class="team-two__shape-6 zoominout">
-                <img src="assets/images/shapes/team-two-shape-6.png" alt="">
+
+            <div class="about-one__shape-4 float-bob-x">
+                <img src="assets/images/shapes/about-one-shape-4.png" alt="">
             </div>
-            <div class="team-two__shape-7 float-bob-x">
-                <img src="assets/images/shapes/team-two-shape-7.png" alt="">
-            </div>
-            <div class="team-two__shape-8 float-bob-y">
-                <img src="assets/images/shapes/team-two-shape-8.png" alt="">
+            <div class="about-one__shape-5" style="background-image: url(assets/images/shapes/about-one-shape-5.png);">
             </div>
             <div class="container">
-                <div class="section-title text-center">
-                    <div class="section-title__tagline-box">
-                        <div class="section-title__tagline-shape-1"></div>
-                        <span class="section-title__tagline">Our Therapists</span>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                            <div class="about-one__img-box">
+                                <div class="about-one__img">
+                                    <img src="assets/Physical Therapy Images/getty-images-BJB9JAYQNsA-unsplash.jpg" alt="">
+                                </div>
+                                <!-- <div class="about-one__shape-1">
+                                    <img src="assets/images/shapes/about-one-shape-1.png" alt="">
+                                </div> -->
+
+                            </div>
+                        </div>
                     </div>
-                    <h2 class="section-title__title">Our Chiropractic Team</h2>
+                    <div class="col-xl-6">
+                        <div class="about-one__right">
+                            <div class="section-title text-left">
+                                <div class="section-title__tagline-box">
+                                    <div class="section-title__tagline-shape-1"></div>
+                                    <span class="section-title__tagline">About Us</span>
+                                </div>
+                                <h2 class="section-title__title">Welcome to Horizon Physical<br> Therapy & Wellness
+                                </h2>
+                            </div>
+                            <p class="about-one__text">Horizon Physical Therapy & Wellness is led by Dr. Fabian and Dr. Susannah Azofeifa, co-founders with over 25 years of combined experience in physical therapy and rehabilitation. Our clinic specializes in sports rehabilitation, women's health, and manual therapy, providing personalized care for patients of all ages. Dr. Fabian brings expertise in sports medicine and CrossFit training, while Dr. Susannah focuses on women's health and dry needling. Our Patient Care Coordinator, Daniela Espaillat, ensures every patient receives compassionate, comprehensive care throughout their recovery journey. We believe in treating the whole person, combining clinical expertise with genuine compassion to help you achieve your wellness goals.</p>
+                            <div class="about-one__points-box">
+                                <ul class="about-one__points list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Sports Rehabilitation & CrossFit Training</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Women's Health & Postpartum Care</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Manual Therapy & Dry Needling</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Personalized Patient Care Coordination</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Compassionate, Family-Centered Approach</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Pre and Post Surgical Rehabilitation</p>
+                                    </li>
+                                </ul>
+                                <ul class="about-one__points about-one__points-2 list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Vestibular Rehabilitation Therapy (VRT)</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Physical Therapy Treatment for Headaches</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Musculoskeletal Pain Management</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Low Back Pain Treatment</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Running and Gait Analysis</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Geriatric Program</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Therapeutic Dry Needling</p>
+                                    </li>
+                                </ul>
+                                <ul class="about-one__points about-one__points-3 list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>TMJ Rehabilitation</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Fall Prevention and Balance Training</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Arthritis Management</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Post Concussion Rehabilitation</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-check"></span>
+                                        </div>
+                                        <p>Wellness Program</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="about-one__client-and-call-box">
+                                <div class="about-one__client-box">
+                                    <div class="about-one__client-img">
+                                        <img src="assets/Physical Therapy Images/mr-lee-f4RBYsY2hxA-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="about-one__client-content">
+                                        <h3>Leslie Alexander</h3>
+                                        <p>CEO, PhysioCare</p>
+                                    </div>
+                                </div>
+                                <div class="about-one__call-box">
+                                    <div class="icon">
+                                        <span class="icon-phone"></span>
+                                    </div>
+                                    <div class="content">
+                                        <p>Call Us Now</p>
+                                        <h3><a href="tel:8036136099">803-613-6099</a></h3>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About One End -->
+
+        <!--Our Offering Start -->
+        <!--
+        <section class="our-offering">
+            <div class="our-offering__bg" style="background-image: url(assets/images/backgrounds/our-offering-bg.jpg);">
+            </div>
+            <div class="our-offering__bg-box-2"></div>
+            <div class="our-offering__bg-box">
+                <div class="our-offering__bg-shape" style="background-image: url(assets/images/shapes/our-offering-bg-shape.jpg);"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="our-offering__left">
+                            <div class="section-title text-left">
+                                <div class="section-title__tagline-box">
+                                    <div class="section-title__tagline-shape-1"></div>
+                                    <span class="section-title__tagline">Our Offering</span>
+                                </div>
+                                <h2 class="section-title__title">Conditions We Treat with <br>Physical Therapy.</h2>
+                            </div>
+                            <p class="our-offering__text">Our comprehensive physical therapy programs address a wide range of conditions <br>including sports injuries, post-surgical rehabilitation, and chronic pain management.</p>
+                            <div class="our-offering__timer-box">
+                                <div class="timer-box">
+                                    <div class="countdown-timer">
+                                        <div class="default-coundown">
+                                            <div class="box">
+                                                <div class="countdown time-countdown" data-countdown-time="2025/05/09">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-offering__btn-box">
+                                <a href="appointment.html" class="our-offering__btn thm-btn">Appointment Now<span
+                                        class="icon-right-arrow"></span></a>
+                            </div>
+                            <div class="our-offering__video-link">
+                                <a href="https://www.youtube.com/watch?v=To9VzfdWYlc" class="video-popup">
+                                    <div class="our-offering__video-icon">
+                                        <span class="icon-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+        <!--Our Offering End -->
+
+        <!--Team One Start -->
+        <section class="team-one" id="team">
+            <div class="team-one__shape-1 float-bob-x">
+                <img src="assets/images/shapes/team-one-shape-1.png" alt="">
+            </div>
+            <!-- <div class="team-one__shape-2 float-bob-y">
+                <img src="assets/images/shapes/team-one-shape-2.png" alt="">
+            </div> -->
+            <div class="team-one__shape-3 float-bob-x">
+                <img src="assets/images/shapes/team-one-shape-3.png" alt="">
+            </div>
+            <div class="team-one__shape-4 float-bob-y">
+                <img src="assets/images/shapes/team-one-shape-4.png" alt="">
+            </div>
+            <div class="team-one__shape-5 zoominout">
+                <img src="assets/images/shapes/team-one-shape-5.png" alt="">
+            </div>
+            <div class="container">
+                <div class="team-one__top">
+                    <div class="team-one__left">
+                        <div class="section-title text-left">
+                            <div class="section-title__tagline-box">
+                                <div class="section-title__tagline-shape-1"></div>
+                                <span class="section-title__tagline">Our Therapists</span>
+                            </div>
+                            <h2 class="section-title__title">Highly Qualified Physical Therapists</h2>
+                            <p class="section-title__text" style="margin-top: 20px; color: #666; line-height: 1.6;">Our team of licensed physical therapists brings together decades of combined experience in rehabilitation medicine. Each therapist specializes in specific areas of physical therapy, ensuring you receive expert care tailored to your unique condition and recovery goals. We maintain the highest standards of professional development through continuous education and training in the latest therapeutic techniques and technologies.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="team-one__btn-box">
+                        <a href="team1.html" class="team-one__btn thm-btn">All Therapist<span class="icon-right-arrow"></span></a>
+                    </div> -->
                 </div>
                 <div class="row">
-                    <!--Team Two Single Start -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="team-two__single">
-                            <div class="team-two__img">
-                                <img src="assets/images/team/team-2-1.jpg" alt="">
-                            </div>
-                            <div class="team-two__content">
-                                <div class="team-two__info-box">
-                                    <h4 class="team-two__name"><a href="team-details.html">Marvin McKinney</a></h4>
-                                    <p class="team-two__sub-title">Physical Therapist</p>
-                                </div>
-                                <div class="team-two__social">
-                                    <a href="#"><span class="icon-facebook"></span></a>
-                                    <a href="#"><span class="icon-instagram"></span></a>
-                                    <a href="#"><span class="icon-link-in"></span></a>
+                    <!--Team one Single Start-->
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="PNG LOGOS/HorizonFabian.jpg" alt="">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!--Team Two Single End -->
-                    <!--Team Two Single Start -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="team-two__single">
-                            <div class="team-two__img">
-                                <img src="assets/images/team/team-2-2.jpg" alt="">
-                            </div>
-                            <div class="team-two__content">
-                                <div class="team-two__info-box">
-                                    <h4 class="team-two__name"><a href="team-details.html">Bessie Cooper</a></h4>
-                                    <p class="team-two__sub-title">Senior Therapist</p>
-                                </div>
-                                <div class="team-two__social">
-                                    <a href="#"><span class="icon-facebook"></span></a>
-                                    <a href="#"><span class="icon-instagram"></span></a>
-                                    <a href="#"><span class="icon-link-in"></span></a>
+                            <div class="team-one__content">
+                                <h3 class="team-one__title"><a href="team-details.html">Dr Fabian Azofeifa PT, DPT</a></h3>
+                                <p class="team-one__sub-title">Co-Founder of Horizon Physical Therapy & Wellness</p>
+                                <p class="team-one__description" style="font-size: 14px; color: #666; margin: 10px 0; line-height: 1.5;">He earned his Bachelor of Science in Biology from Augusta University and his Doctorate in Physical Therapy from Brenau University. In addition to being a licensed physical therapist, Fabian is also a certified CrossFit Level 1 Trainer.</p>
+                                <div class="team-one__social">
+                                    <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Team Two Single End -->
-                    <!--Team Two Single Start -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
-                        <div class="team-two__single">
-                            <div class="team-two__img">
-                                <img src="assets/images/team/team-2-3.jpg" alt="">
-                            </div>
-                            <div class="team-two__content">
-                                <div class="team-two__info-box">
-                                    <h4 class="team-two__name"><a href="team-details.html">Leslie Alexander</a></h4>
-                                    <p class="team-two__sub-title">Acupuncture Therapist</p>
+                    <!--Team one Single End-->
+                    <!--Team one Single Start-->
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="PNG LOGOS/HorizonSuzanne.jpg" alt="">
                                 </div>
-                                <div class="team-two__social">
-                                    <a href="#"><span class="icon-facebook"></span></a>
-                                    <a href="#"><span class="icon-instagram"></span></a>
-                                    <a href="#"><span class="icon-link-in"></span></a>
+                            </div>
+                            <div class="team-one__content">
+                                <h3 class="team-one__title"><a href="team-details.html">Dr Susannah Azofeifa PT, DPT </a></h3>
+                                <p class="team-one__sub-title">Co-Founder of Horizon Physical Therapy & Wellness</p>
+                                <p class="team-one__description" style="font-size: 14px; color: #666; margin: 10px 0; line-height: 1.5;">Dr. Susannah Azofeifa PT, DPT earned a Bachelor of Science from the University of Louisville in 2017 </p>
+                                <div class="team-one__social">
+                                    <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Team Two Single End -->
+                    <!--Team one Single End-->
+                    <!--Team one Single Start-->
+                    <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="PNG LOGOS/HorizonAssistant.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <h3 class="team-one__title"><a href="team-details.html">Daniela Espaillat </a></h3>
+                                <p class="team-one__sub-title">Patient Care Coordinator </p>
+                                <p class="team-one__description" style="font-size: 14px; color: #666; margin: 10px 0; line-height: 1.5;">Daniela’s passion for learning has driven her to earn certification in Medical Office Procedures and Administration Fundamentals Specialization through the MedCerts online career training program.</p>
+                                <div class="team-one__social">
+                                    <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Team one Single End-->
                 </div>
             </div>
         </section>
-        <!--Team Two End -->
+        <!--Team One End -->
 
-        <!--Appointment Two Start -->
-        <section class="appointment-two">
-            <div class="appointment-two__shape-3">
-                <img src="assets/images/shapes/appointment-two-shape-3.png" alt="">
-            </div>
-            <div class="appointment-two__shape-4 float-bob-y">
-                <img src="assets/images/shapes/appointment-two-shape-4.png" alt="">
-            </div>
-            <div class="appointment-two__shape-5 zoominout"></div>
+        <!--Appointment Booking Start -->
+        <section class="appointment-booking" style="padding: 60px 0; background-color: #f8f9fa;">
             <div class="container">
-                <div class="appointment-two__inner">
-                    <div class="appointment-two__shape-1"></div>
-                    <div class="appointment-two__shape-2">
-                        <img src="assets/images/shapes/appointment-two-shape-2.png" alt="">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-title text-center">
+                            <div class="section-title__tagline-box">
+                                <div class="section-title__tagline-shape-1"></div>
+                                <span class="section-title__tagline">Book Appointment</span>
+                            </div>
+                            <h2 class="section-title__title">Schedule Your Session</h2>
+                            <p class="section-title__text" style="margin-top: 20px; color: #666; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">Ready to start your journey to recovery? Book your initial consultation with one of our experienced physical therapists. We offer flexible scheduling options including morning, afternoon, and evening appointments to accommodate your busy lifestyle. Your first session includes a comprehensive evaluation and personalized treatment plan.</p>
+                        </div>
+                        <div style="margin-top: 40px;">
+                            <iframe src="https://calendly.com/emersondcoulibaly/" width="100%" height="600" frameborder="0"></iframe>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-5"></div>
-                        <div class="col-xl-7">
-                            <div class="appointment-two__right">
+                </div>
+            </div>
+        </section>
+        <!--Appointment Booking End -->
+
+        <!--Testimonial One Start -->
+        <section class="testimonial-one">
+            <!-- <div class="testimonial-one__bg-img" style="background-image: url(assets/images/backgrounds/testimonial-one-bg-img.jpg);"></div> -->
+            <div class="testimonial-one__shape-1" style="background-image: url(assets/images/shapes/testimonial-one-shape-1.png);"></div>
+            <div class="testimonial-one__shape-2 float-bob-x">
+                <img src="assets/images/shapes/testimonial-one-shape-2.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-xl-6">
+                        <div class="testimonial-one__left">
+                            <div class="testimonial-one__form-inner">
                                 <div class="section-title text-left">
                                     <div class="section-title__tagline-box">
                                         <div class="section-title__tagline-shape-1"></div>
@@ -899,51 +921,58 @@
                                     </div>
                                     <h2 class="section-title__title">Book Now An Appointment</h2>
                                 </div>
-                                <form class="contact-form-validated appointment-two__form"
+                                <form class="contact-form-validated testimonial-one__form"
                                     action="assets/inc/sendemail.php" method="post" novalidate="novalidate">
                                     <div class="row">
                                         <div class="col-xl-6 col-lg-6">
-                                            <div class="appointment-two__input-box">
-                                                <input type="text" name="name" placeholder="Full Name" required="">
+                                            <div class="testimonial-one__input-box">
+                                                <h4 class="testimonial-one__input-box-title">Full name*</h4>
+                                                <input type="text" name="name" placeholder="Robot fox" required="">
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
-                                            <div class="appointment-two__input-box">
-                                                <input type="email" name="email" placeholder="Email Address"
+                                            <div class="testimonial-one__input-box">
+                                                <h4 class="testimonial-one__input-box-title">Email Address*</h4>
+                                                <input type="email" name="email" placeholder="Fabian@horizonptw.com"
                                                     required="">
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
-                                            <div class="appointment-two__input-box">
-                                                <input type="text" name="Phone" placeholder="Phone Number" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6">
-                                            <div class="appointment-two__input-box">
-                                                <input type="text" name="date" placeholder="Select Date"
-                                                    id="datepicker">
-                                                <div class="appointment-two__input-box-icon">
-                                                    <span class="icon-calender"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="appointment-two__input-box">
+                                            <div class="testimonial-one__input-box">
+                                                <h4 class="testimonial-one__input-box-title">Type Of Service*</h4>
                                                 <div class="select-box">
                                                     <select class="selectmenu wide">
-                                                        <option selected="selected">Type Of Service</option>
+                                                        <option selected="selected">Select</option>
                                                         <option>Type Of Service 01</option>
                                                         <option>Type Of Service 02</option>
                                                         <option>Type Of Service 03</option>
                                                         <option>Type Of Service 04</option>
                                                         <option>Type Of Service 05</option>
+                                                        <option>Type Of Service 06</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-xl-6 col-lg-6">
+                                            <div class="testimonial-one__input-box">
+                                                <h4 class="testimonial-one__input-box-title">Select Date*</h4>
+                                                <div class="testimonial-one__input-box-icon">
+                                                    <span class="icon-calender"></span>
+                                                </div>
+                                                <input type="text" name="date" placeholder="Select Date"
+                                                    id="datepicker">
+                                            </div>
+                                        </div>
                                         <div class="col-xl-12">
-                                            <div class="appointment-two__btn-box">
-                                                <button type="submit" class="thm-btn appointment-two__btn">Appointment Now<span class="icon-right-arrow"></span></button>
+                                            <div class="testimonial-one__input-box text-message-box">
+                                                <h4 class="testimonial-one__input-box-title">Message*</h4>
+                                                <textarea name="message" placeholder="Type here..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="testimonial-one__btn-box">
+                                                <button type="submit" class="thm-btn testimonial-one__btn">Request a
+                                                    quote<span class="icon-right-arrow"></span></button>
                                             </div>
                                         </div>
                                     </div>
@@ -951,42 +980,435 @@
                                 <div class="result"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="appointment-two__img">
-                        <img src="assets/images/resources/appointment-two-img-1.png" alt="">
+                    </div> -->
+                    <div class="col-xl-6">
+                        <div class="testimonial-one__right">
+                            <div class="section-title text-left">
+                                <div class="section-title__tagline-box">
+                                    <div class="section-title__tagline-shape-1"></div>
+                                    <span class="section-title__tagline">Testimonials</span>
+                                </div>
+                                <h2 class="section-title__title">See Our Clients Feedback</h2>
+                            </div>
+                            <p class="testimonial-one__text">Hear from our patients about their successful recovery journeys and the positive impact our physical therapy treatments have had on their lives and mobility. Our commitment to personalized care and evidence-based treatment approaches has helped thousands of patients achieve their recovery goals and return to the activities they love. These testimonials reflect the real experiences of individuals who have transformed their lives through dedicated physical therapy.</p>
+                            <div class="testimonial-one__carrosel-box">
+                                <div class="testimonial-carousel-one swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!--Testimonial One Single Start-->
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-one__single">
+                                                <!-- <div class="testimonial-one__quote-icon">
+                                                    <img src="assets/images/icon/quote-icon.png" alt="">
+                                                </div> -->
+                                                <div class="testimonial-one__client-info">
+                                                    <div class="testimonial-one__client-img">
+                                                        <img src="assets/Physical Therapy Images/jesper-aggergaard-38Hg7GMTogo-unsplash.jpg" alt="">
+                                                    </div>
+                                                    <div class="testimonial-one__client-content">
+                                                        <h3><a href="#">Albert</a></h3>
+                                                        <p>Sports Injury Patient</p>
+                                                        <div class="testimonial-one__ratting">
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="testimonial-one__single-text">After my sports injury, the physical therapy team helped me recover faster than expected. Their expertise and personalized treatment plan got me back to my active lifestyle in no time.</p>
+                                            </div>
+                                        </div>
+                                        <!--Testimonial One Single End-->
+                                        <!--Testimonial One Single Start-->
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-one__single">
+                                                <!-- <div class="testimonial-one__quote-icon">
+                                                    <img src="assets/images/icon/quote-icon.png" alt="">
+                                                </div> -->
+                                                <div class="testimonial-one__client-info">
+                                                    <div class="testimonial-one__client-img">
+                                                        <img src="assets/Physical Therapy Images/getty-images-FuF2Lnv7uvA-unsplash.jpg" alt="">
+                                                    </div>
+                                                    <div class="testimonial-one__client-content">
+                                                        <h3><a href="#">Kathryn</a></h3>
+                                                        <p>Post-Surgery Patient</p>
+                                                        <div class="testimonial-one__ratting">
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                            <span class="icon-star"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="testimonial-one__single-text">The physical therapy team's post-surgery rehabilitation program was exceptional. They helped me regain strength and mobility with a comprehensive treatment plan tailored to my specific needs.</p>
+                                            </div>
+                                        </div>
+                                        <!--Testimonial One Single End-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="testimonial-one__nav">
+                                <div class="swiper-button-prev">
+                                    <i class="icon-angle-right"></i>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <i class="icon-angle-left"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Appointment Two End -->
+        <!--Testimonial One End -->
+
+        <!--Blog One Start -->
+        <!--
+        <section class="blog-one">
+            <div class="blog-one__shape-1 float-bob-x">
+                <img src="assets/images/shapes/blog-one-shape-1.png" alt="">
+            </div>
+            <div class="blog-one__shape-2 float-bob-y">
+                <img src="assets/images/shapes/blog-one-shape-2.png" alt="">
+            </div>
+            <div class="blog-one__shape-3 float-bob-y">
+                <img src="assets/images/shapes/blog-one-shape-3.png" alt="">
+            </div>
+            <div class="blog-one__shape-4 float-bob-x">
+                <img src="assets/images/shapes/blog-one-shape-4.png" alt="">
+            </div>
+            <div class="container">
+                <div class="blog-one__top">
+                    <div class="section-title text-left">
+                        <div class="section-title__tagline-box">
+                            <div class="section-title__tagline-shape-1"></div>
+                            <span class="section-title__tagline">Blog & News</span>
+                        </div>
+                        <h2 class="section-title__title">Our Latest News</h2>
+                    </div>
+                    <div class="blog-one__btn-box">
+                        <a href="blog.html" class="blog-one__btn thm-btn">View More<span
+                                class="icon-right-arrow"></span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Blog One Single Start-->
+                    <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-duration=".9s" data-wow-delay="100ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__img-box">
+                                <div class="blog-one__img">
+                                    <img src="assets/Physical Therapy Images/sincerely-media-inoZpsBQRqk-unsplash.jpg" alt="@@title">
+                                    <img src="assets/Physical Therapy Images/sincerely-media-inoZpsBQRqk-unsplash.jpg" alt="@@title">
+                                    <a href="blog-details.html" class="blog-one__link"><span class="sr-only"></span></a>
+                                </div>
+                                <div class="blog-one__date">
+                                    <p>12<br>
+                                        <span>Dec</span></p>
+                                </div>
+                            </div>
+                            <div class="blog-one__content">
+                                <ul class="blog-one__meta list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="far fa-user fa-fw"></span>
+                                        </div>
+                                        <a href="blog-details.html">By Admin</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-comments"></span>
+                                        </div>
+                                        <a href="blog-details.html">0 Comments</a>
+                                    </li>
+                                </ul>
+                                <h3 class="blog-one__title"><a href="blog-details.html">Effective Physical Therapy for
+                                        Back Pain Relief</a></h3>
+                                <a href="blog-details.html" class="blog-one__read-more">read More<span
+                                        class="icon-right-arrow"></span></a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--Blog One Single End-->
+                    <!--Blog One Single Start-->
+                    <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-duration=".9s" data-wow-delay="300ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__img-box">
+                                <div class="blog-one__img">
+                                    <img src="assets/Physical Therapy Images/annie-spratt-Nt5eeIKH-1s-unsplash.jpg" alt="@@title">
+                                    <img src="assets/Physical Therapy Images/annie-spratt-Nt5eeIKH-1s-unsplash.jpg" alt="@@title">
+                                    <a href="blog-details.html" class="blog-one__link"><span class="sr-only"></span></a>
+                                </div>
+                                <div class="blog-one__date">
+                                    <p>15<br><span>Dec</span></p>
+                                </div>
+                            </div>
+                            <div class="blog-one__content">
+                                <ul class="blog-one__meta list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="far fa-user fa-fw"></span>
+                                        </div>
+                                        <a href="blog-details.html">By Admin</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-comments"></span>
+                                        </div>
+                                        <a href="blog-details.html">0 Comments</a>
+                                    </li>
+                                </ul>
+                                <h3 class="blog-one__title"><a href="blog-details.html">Sports Injury Recovery: Physical Therapy Techniques</a></h3>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--Blog One Single End-->
+                    <!--Blog One Single Start-->
+                    <!-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-duration=".9s" data-wow-delay="600ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__img-box">
+                                <div class="blog-one__img">
+                                    <img src="assets/Physical Therapy Images/tom-claes-CfdzNybONzc-unsplash.jpg" alt="@@title">
+                                    <img src="assets/Physical Therapy Images/tom-claes-CfdzNybONzc-unsplash.jpg" alt="@@title">
+                                    <a href="blog-details.html" class="blog-one__link"><span class="sr-only"></span></a>
+                                </div>
+                                <div class="blog-one__date">
+                                    <p>17<br><span>Dec</span></p>
+                                </div>
+                            </div>
+                            <div class="blog-one__content">
+                                <ul class="blog-one__meta list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="far fa-user fa-fw"></span>
+                                        </div>
+                                        <a href="blog-details.html">By Admin</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-comments"></span>
+                                        </div>
+                                        <a href="blog-details.html">0 Comments</a>
+                                    </li>
+                                </ul>
+                                <h3 class="blog-one__title"><a href="blog-details.html">Post-Surgery Rehabilitation: A Complete Guide</a></h3>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    
+        <!--Blog One End -->
+
+        <!--Brand One Start-->
+        <!--
+        <section class="brand-one">
+            <div class="container">
+                <div class="brand-carousel-one swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-4.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-5.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-4.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__img">
+                                <img src="assets/images/brand/brand-1-5.png" alt="">
+                            </div>
+                            <div class="swiper-slide__hover-img">
+                                <img src="assets/images/brand/brand-hover-1-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+        <!--Brand One End-->
+
+        <!--CTA One Start-->
+        <!-- <section class="cta-one">
+            <div class="container">
+                <div class="cta-one__inner wow fadeInUp" data-wow-duration=".9s" data-wow-delay="300ms">
+                    <div class="cta-one__shape-1 float-bob-x">
+                        <img src="assets/images/shapes/cta-one-shape-1.png" alt="">
+                    </div>
+                    <div class="cta-one__shape-2">
+                        <img src="assets/images/shapes/cta-one-shape-2.png" alt="">
+                    </div>
+                    <div class="cta-one__shape-3">
+                        <img src="assets/images/shapes/cta-one-shape-3.png" alt="">
+                    </div>
+                    <h3 class="cta-one__title">Subscribe for Any Update
+                        <br> Information</h3>
+                    <div class="cta-one__from-box">
+                        <form class="cta-one__form">
+                            <div class="cta-one__input-box">
+                                <input type="email" placeholder="Enter Email Address" name="email">
+                                <button type="submit" class="cta-one__btn thm-btn">Subscribe Us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--CTA One End-->
+
+        <!--Contact Info Section Start-->
+        <section class="contact-info-section" id="contact" style="padding: 80px 0; background-color: #f8f9fa;">
+            <div class="container">
+                <div class="contact-page__top">
+                    <div class="row">
+                        <!--Contact Page Single Start-->
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="contact-page__single">
+                                <div class="contact-page__icon">
+                                    <span class="icon-location"></span>
+                                </div>
+                                <h3>Our Address</h3>
+                                <p>210 East Martintown Road<br> North Augusta, SC 29841</p>
+                            </div>
+                        </div>
+                        <!--Contact Page Single End-->
+                        <!--Contact Page Single Start-->
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="contact-page__single">
+                                <div class="contact-page__icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <h3><a href="mailto:Fabian@horizonptw.com">Fabian@horizonptw.com</a></h3>
+                                <p>Email us anytime for any kind of inquiry.</p>
+                            </div>
+                        </div>
+                        <!--Contact Page Single End-->
+                        <!--Contact Page Single Start-->
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="contact-page__single">
+                                <div class="contact-page__icon">
+                                    <span class="icon-phone"></span>
+                                </div>
+                                <h3>Hot: <a href="tel:8036136099">803-613-6099</a></h3>
+                                <p>Call us for any kind of support, we will wait for it.</p>
+                            </div>
+                        </div>
+                        <!--Contact Page Single End-->
+                    </div>
+                </div>
+                
+                <!--Google Maps Section-->
+                <div class="google-maps-section" style="margin-top: 50px;">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title text-center" style="margin-bottom: 30px;">
+                                <h3 style="color: #333; font-size: 24px;">Find Us on the Map</h3>
+                            </div>
+                            <div class="google-maps-container" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-81.8921!3d33.5021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzA3LjYiTiA4McKwNTMnMzEuNiJX!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus&q=210+East+Martintown+Road+North+Augusta+SC+29841" 
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Google Maps Section End-->
+            </div>
+        </section>
+        <!--Contact Info Section End-->
 
         <!--Site Footer Start-->
-        <footer class="site-footer site-footer-two">
-            <div class="site-footer__shape-1">
-                <img src="assets/images/shapes/site-footer-shape-1.png" alt="">
-            </div>
-            <div class="site-footer__shape-2">
-                <img src="assets/images/shapes/site-footer-shape-2.png" alt="">
-            </div>
+        <footer class="site-footer">
             <div class="site-footer__top">
                 <div class="container">
                     <div class="site-footer__top-inner">
                         <div class="row">
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div class="footer-widget__column footer-widget__about">
-                                    <div class="footer-widget__logo">
-                                        <a href="index.html"><img src="assets/images/resources/logo-1.svg" alt=""></a>
+                                    <div class="site-logo footer-widget__logo">
+                                        <a href="index.html"><img src="PNG LOGOS/HORIZON_LOGO_1COLORREVERSE.png" width="120" height="32" alt=""></a>
                                     </div>
-                                    <p class="footer-widget__about-text">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+                                    <p class="footer-widget__about-text">Horizon Physical Therapy & Wellness is led by a team of experienced healthcare professionals dedicated to providing exceptional physical therapy services. Our co-founders, Dr. Fabian and Dr. Susannah Azofeifa, bring over 25 years of combined experience in sports rehabilitation, women's health, and manual therapy. Together with our Patient Care Coordinator Daniela Espaillat, we ensure every patient receives personalized, compassionate care tailored to their unique needs and recovery goals.</p>
                                     <div class="site-footer__social">
-                                        <a href="#"><i class="icon-facebook"></i></a>
-                                        <a href="#"><i class="icon-twitter"></i></a>
-                                        <a href="#"><i class="icon-link-in"></i></a>
-                                        <a href="#"><i class="icon-youtube"></i></a>
+                                        <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><i class="icon-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <!-- <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="footer-widget__column footer-widget__quick-link">
                                     <div class="footer-widget__title-box">
                                         <h3 class="footer-widget__title">Quick Links</h3>
@@ -999,21 +1421,32 @@
                                         <li><a href="contact.html"><span class="icon-andle-dabble"></span>Contact Us</a></li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            </div> -->
+                            <!-- <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="footer-widget__column footer-widget__services">
                                     <div class="footer-widget__title-box">
                                         <h3 class="footer-widget__title">Our Services</h3>
                                     </div>
                                     <ul class="footer-widget__quick-link-list list-unstyled">
-                                        <li><a href="chiropractic-care.html"><span class="icon-andle-dabble"></span>Chiropractic Therapy</a></li>
-                                        <li><a href="massages-therapy.html"><span class="icon-andle-dabble"></span>Massage Therapy</a></li>
-                                        <li><a href="trained-therapists.html"><span class="icon-andle-dabble"></span>Trained Therapists</a></li>
-                                        <li><a href="laser-therapy.html"><span class="icon-andle-dabble"></span>Low Level Laser</a></li>
-                                        <li><a href="laser-therapy.html"><span class="icon-andle-dabble"></span>Acupuncture</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Women's Health & Physical Therapy</a></li>
+                                        <li><a href="laser-therapy.html"><span class="icon-andle-dabble"></span>Sports Rehabilitation & CrossFit Training</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Manual Therapy & Pain Management</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Pre and Post Surgical Rehabilitation</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Vestibular Rehabilitation Therapy (VRT)</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Physical Therapy Treatment for Headaches</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Musculoskeletal Pain Management</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Low Back Pain Treatment</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Running and Gait Analysis</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Geriatric Program</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Therapeutic Dry Needling</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>TMJ Rehabilitation</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Fall Prevention and Balance Training</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Arthritis Management</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Post Concussion Rehabilitation</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Wellness Program</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                 <div class="footer-widget__column footer-widget__contact">
                                     <div class="footer-widget__title-box">
@@ -1026,7 +1459,7 @@
                                             </div>
                                             <div class="content">
                                                 <span>Location:</span>
-                                                <p>4517 Washington. mg Manchester,<br> Kentucky 39495</p>
+                                                <p>210 East Martintown Road<br> North Augusta, SC 29841</p>
                                             </div>
                                         </li>
                                         <li>
@@ -1034,8 +1467,8 @@
                                                 <span class="icon-clock"></span>
                                             </div>
                                             <div class="content">
-                                                <span>Opening Hours: </span>
-                                                <p>Mon - Sat: 10.00 AM - 4.00 PM</p>
+                                                <span>Opening Hours:</span>
+                                                <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
                                             </div>
                                         </li>
                                         <li>
@@ -1045,9 +1478,17 @@
                                             <div class="content">
                                                 <span>Phone Call:</span>
                                                 <p>
-                                                    <a href="tel:20866660112">208-6666-0112, </a>
-                                                    <a href="tel:30855550113">308-5555-0113</a>
+                                                    <a href="tel:8036136099">803-613-6099</a>
                                                 </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-fax"></span>
+                                            </div>
+                                            <div class="content">
+                                                <span>Fax:</span>
+                                                <p><a href="tel:8035998267">(803) 599-8267</a></p>
                                             </div>
                                         </li>
                                     </ul>
@@ -1057,21 +1498,20 @@
                     </div>
                 </div>
             </div>
-            <div class="site-footer__bottom">
+            <!-- <div class="site-footer__bottom">
                 <div class="container">
                     <div class="site-footer__bottom-inner">
-                        <p class="site-footer__bottom-text">© All Copyright 2024 by Chirofind</p>
+                        <p class="site-footer__bottom-text">© All Copyright 2024 by PhysioCare</p>
                         <ul class="list-unstyled site-footer__bottom-menu">
-                            <li><a href="about.html">Trams & Condition</a></li>
-                            <li><a href="about.html">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
                         </ul>
                         <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fas fa-arrow-up"></i></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </footer>
     </div><!-- /.page-wrapper -->
-
 
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
@@ -1080,37 +1520,35 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.svg" width="150" alt="" /></a>
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="150" alt="" /></a>
             </div>
+            <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
             <!-- /.mobile-nav__container -->
 
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@chirofind.com">needhelp@chirofind.com</a>
+                    <a href="mailto:Fabian@horizonptw.com">Fabian@horizonptw.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:+208-555-0112">+208-555-0112</a>
+                    <a href="tel:8036136099">803-613-6099</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
-                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank" class="fab fa-instagram"></a>
                 </div>
             </div><!-- /.mobile-nav__top -->
-            <div class="main-menu__btn-box-outer">
+            <!-- <div class="main-menu__btn-box-outer">
                 <div class="main-menu__btn-box">
                     <a href="appointment.html" class="main-menu__btn thm-btn">
                         Appointment Now
                         <span class="icon-right-arrow"></span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- /.mobile-nav__wrapper -->
@@ -1150,7 +1588,6 @@
     <script src="assets/vendors/countdown/countdown.min.js"></script>
     <script src="assets/vendors/twenty-twenty/twentytwenty.js"></script>
     <script src="assets/vendors/twenty-twenty/jquery.event.move.js"></script>
-
     <!-- template js -->
     <script src="assets/js/chirofind.js"></script>
 </body>
