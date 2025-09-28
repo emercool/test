@@ -32,6 +32,45 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/chirofind.css" />
     <link rel="stylesheet" href="assets/css/chirofind-responsive.css" />
+    
+    <!-- Custom styles for team layout -->
+    <style>
+        /* Team details side-by-side layout */
+        .team-details__top {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .team-details__client-img {
+            flex: 0 0 300px;
+            max-width: 300px;
+        }
+        
+        .team-details__client-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .team-details__client-content {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .team-details__top {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .team-details__client-img {
+                flex: none;
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -55,7 +94,7 @@
                                 <i class="icon-envolop"></i>
                             </div>
                             <div class="text">
-                                <p><a href="mailto:info@example.com">info@example.com</a>
+                                <p><a href="mailto:Fabian@horizonptw.com">Fabian@horizonptw.com</a>
                                 </p>
                             </div>
                         </li>
@@ -64,7 +103,7 @@
                                 <i class="icon-pin"></i>
                             </div>
                             <div class="text">
-                                <p>8502 Preston Rd. Inglewood</p>
+                                <p>210 East Martintown Road, North Augusta, SC 29841</p>
                             </div>
                         </li>
                     </ul>
@@ -73,10 +112,7 @@
                             <div class="main-menu__social-box-inner">
                                 <h4 class="main-menu__social-box-title">Follow Us:</h4>
                                 <div class="main-menu__social">
-                                    <a href="#"><i class="icon-facebook"></i></a>
-                                    <a href="#"><i class="icon-twitter"></i></a>
-                                    <a href="#"><i class="icon-link-in"></i></a>
-                                    <a href="#"><i class="icon-youtube"></i></a>
+                                    <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><i class="icon-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +124,7 @@
                     <div class="main-menu__wrapper-inner">
                         <div class="main-menu__left">
                             <div class="main-menu__logo">
-                                <a href="index.html"><img src="assets/images/resources/logo-1.svg" alt=""></a>
+                                <a href="index2.html"><img src="PNG LOGOS/HORIZON_LOGO_1COLORREVERSE.png" width="150" height="40" alt=""></a>
                             </div>
                         </div>
                         <div class="main-menu__right">
@@ -118,7 +154,7 @@
                                         </div>
                                         <div class="main-menu-two__call-number">
                                             <p>Call Us Now</p>
-                                            <h5><a href="tel:20866660112">+208-666-0112</a></h5>
+                                            <h5><a href="tel:8036136099">803-613-6099</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +178,7 @@
                     <h2>Team Details</h2>
                     <div class="thm-breadcrumb__box">
                         <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index2.html">Home</a></li>
                             <li><span class="icon-andle-dabble"></span></li>
                             <li>Team Details</li>
                         </ul>
@@ -152,7 +188,7 @@
         </section>
         <!--Page Header End-->
 
-        <!--Team Details Start-->
+        <!--Team Details Start - Fabian-->
         <section class="team-details">
             <div class="container">
                 <div class="team-details__top">
@@ -160,24 +196,24 @@
                         <img src="assets/images/shapes/team-details-top-shape-1.png" alt="">
                     </div>
                     <div class="team-details__client-img">
-                        <img src="assets/images/team/team-details-client-img.jpg" alt="">
+                        <img src="PNG LOGOS/HorizonFabian.jpg" alt="">
                     </div>
                     <div class="team-details__client-content">
-                        <h3 class="team-details__client-title">Savannah Nguyen</h3>
-                        <p class="team-details__client-sub-title">Acupuncture Therapist</p>
-                        <p class="team-details__client-text">Adipiscing elit. Mauris viverra nisl quis mollis laoreet.
-                            Ut eget
-                            lacus a felis accumsan pharetra in dignissim enim. In amet odio mollis urna aliquet
-                            volutpat. Sed bibendum nisl vehicula imperdiet imperdiet, augue massa fringilla.</p>
+                        <h3 class="team-details__client-title">Dr Fabian Azofeifa PT, DPT</h3>
+                        <p class="team-details__client-sub-title">Co-Founder of Horizon Physical Therapy & Wellness</p>
+                        <p class="team-details__client-text">Dr. Fabian Azofeifa PT, DPT was born in Costa Rica and raised in North Augusta, South Carolina, where he attended both middle and high school. He earned his Bachelor of Science in Biology from Augusta University and his Doctorate in Physical Therapy from Brenau University. In addition to being a licensed physical therapist, Fabian is also a certified CrossFit Level 1 Trainer.
+                            With a strong athletic background—including playing collegiate soccer and competing in Olympic weightlifting at the University Nationals—Fabian brings a unique perspective to patient care. His treatment approach is tailored to each individual, combining skilled hands-on techniques with a fitness-forward mindset and carefully structured progressive exercises.
+                            Outside the clinic, Fabian enjoys pushing his own limits at North Augusta Family Y CrossFit, attending church, exploring local coffee shops, and spending quality time with his wife, Susannah, and their son, Luca.
+                            </p>
                         <ul class="team-details__client-list list-unstyled">
                             <li>
-                                <p><span>Experience:</span>10 Years</p>
+                                <p><span>Experience:</span>8 Years Physical Therapy</p>
                             </li>
                             <li>
-                                <p><span>Position:</span>Acupuncture Therapist </p>
+                                <p><span>Position:</span>Co-Founder & Senior Physical Therapist</p>
                             </li>
                             <li>
-                                <p><span>Phone:</span><a href="tel:2085550112">+208-555-0112</a></p>
+                                <p><span>Phone:</span><a href="tel:8036136099">803-613-6099</a></p>
                             </li>
                         </ul>
                         <div class="team-details__client-social-box">
@@ -185,103 +221,7 @@
                                 <p>Social Media</p>
                             </div>
                             <div class="team-details__client-social">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"><span class="icon-twitter"></span></a>
-                                <a href="#"><span class="icon-link-in"></span></a>
-                                <a href="#"><span class="icon-youtube"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-details__bottom">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="team-details__bottom-left">
-                                <h3 class="team-details__bottom-title-1">Professional Info</h3>
-                                <p class="team-details__bottom-text-1">Consectetur adipisicing elit, sed do eiusmod
-                                    tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam,
-                                    made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                                <p class="team-details__bottom-text-2">The is ipsum dolor sit amet consectetur
-                                    adipiscing elit. Fusce eleifend porta arcu In hac augu ehabitasse the is platea
-                                    augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="team-details__bottom-right">
-                                <ul class="team-details__progress-box list-unstyled">
-                                    <li>
-                                        <div class="team-details__progress">
-                                            <h4 class="team-details__progress-title">Physical Therapy</h4>
-                                            <div class="bar">
-                                                <div class="bar-inner count-bar" data-percent="86%">
-                                                    <div class="count-text">86%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="team-details__progress">
-                                            <h4 class="team-details__progress-title">Rehabilitation</h4>
-                                            <div class="bar">
-                                                <div class="bar-inner count-bar" data-percent="92%">
-                                                    <div class="count-text">92%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="team-details__progress">
-                                            <h4 class="team-details__progress-title">Sport Injuries</h4>
-                                            <div class="bar">
-                                                <div class="bar-inner count-bar" data-percent="72%">
-                                                    <div class="count-text">92%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Team Details End-->
-
-        <!--Team Details Two Start-->
-        <section class="team-details" style="padding-top: 0;">
-            <div class="container">
-                <div class="team-details__top">
-                    <div class="team-details__top-shape-1">
-                        <img src="assets/images/shapes/team-details-top-shape-1.png" alt="">
-                    </div>
-                    <div class="team-details__client-img">
-                        <img src="assets/Physical Therapy Images/getty-images-IYcZitb1OlE-unsplash.jpg" alt="">
-                    </div>
-                    <div class="team-details__client-content">
-                        <h3 class="team-details__client-title">Dr. Marcus Thompson</h3>
-                        <p class="team-details__client-sub-title">Senior Physical Therapist</p>
-                        <p class="team-details__client-text">Dr. Thompson specializes in sports rehabilitation and post-surgical recovery. With extensive experience in manual therapy and therapeutic exercise, he helps patients achieve optimal recovery outcomes through evidence-based treatment approaches and personalized care plans.</p>
-                        <ul class="team-details__client-list list-unstyled">
-                            <li>
-                                <p><span>Experience:</span>15 Years</p>
-                            </li>
-                            <li>
-                                <p><span>Position:</span>Senior Physical Therapist</p>
-                            </li>
-                            <li>
-                                <p><span>Phone:</span><a href="tel:2085550115">+208-555-0115</a></p>
-                            </li>
-                        </ul>
-                        <div class="team-details__client-social-box">
-                            <div class="team-details__client-social-title">
-                                <p>Social Media</p>
-                            </div>
-                            <div class="team-details__client-social">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                                <a href="#"><span class="icon-twitter"></span></a>
-                                <a href="#"><span class="icon-link-in"></span></a>
-                                <a href="#"><span class="icon-youtube"></span></a>
+                                <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
                             </div>
                         </div>
                     </div>
@@ -291,8 +231,8 @@
                         <div class="col-xl-6 col-lg-6">
                             <div class="team-details__bottom-left">
                                 <h3 class="team-details__bottom-title-1">Professional Background</h3>
-                                <p class="team-details__bottom-text-1">Dr. Thompson earned his Doctorate in Physical Therapy from Johns Hopkins University and completed specialized training in orthopedic manual therapy. He has worked with professional athletes and post-surgical patients, developing innovative rehabilitation protocols.</p>
-                                <p class="team-details__bottom-text-2">His expertise includes advanced manual therapy techniques, movement analysis, and sports-specific rehabilitation. Dr. Thompson is certified in dry needling and has published research on recovery optimization in peer-reviewed journals.</p>
+                                <p class="team-details__bottom-text-1">Dr. Fabian earned his Doctorate in Physical Therapy from Brenau University and completed specialized training in orthopedic manual therapy. He has worked with professional athletes and post-surgical patients, developing innovative rehabilitation protocols.</p>
+                                <p class="team-details__bottom-text-2">His expertise includes advanced manual therapy techniques, movement analysis, and sports-specific rehabilitation. Dr. Fabian is certified in CrossFit Level 1 training and has extensive experience in Olympic weightlifting and athletic performance optimization.</p>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6">
@@ -312,8 +252,8 @@
                                         <div class="team-details__progress">
                                             <h4 class="team-details__progress-title">Manual Therapy</h4>
                                             <div class="bar">
-                                                <div class="bar-inner count-bar" data-percent="88%">
-                                                    <div class="count-text">88%</div>
+                                                <div class="bar-inner count-bar" data-percent="95%">
+                                                    <div class="count-text">95%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -335,7 +275,191 @@
                 </div>
             </div>
         </section>
-        <!--Team Details Two End-->
+        <!--Team Details End - Fabian-->
+
+        <!--Team Details Two Start - Susannah-->
+        <section class="team-details" style="padding-top: 0;">
+            <div class="container">
+                <div class="team-details__top">
+                    <div class="team-details__top-shape-1">
+                        <img src="assets/images/shapes/team-details-top-shape-1.png" alt="">
+                    </div>
+                    <div class="team-details__client-img">
+                        <img src="PNG LOGOS/HorizonSuzanne.jpg" alt="">
+                    </div>
+                    <div class="team-details__client-content">
+                        <h3 class="team-details__client-title">Dr Susannah Azofeifa PT, DPT</h3>
+                        <p class="team-details__client-sub-title">Co-Founder of Horizon Physical Therapy & Wellness</p>
+                        <p class="team-details__client-text">Originally from Kentucky, Dr. Susannah Azofeifa PT, DPT earned a Bachelor of Science from the University of Louisville in 2017 before going on to receive her Doctor of Physical Therapy from Brenau University in 2021. She is passionate about empowering individuals through movement, with a special focus on treating pregnant and postpartum women. She believes in supporting women through every stage of life, helping them move with both confidence and strength. 
+                            Certified in dry needling, she blends clinical expertise with a personalized, compassionate approach to care. She is dedicated to creating a supportive, healing environment where patients feel seen, heard, and encouraged.
+                            Outside of the clinic, you'll find her enjoying time with her family, doing CrossFit, sipping coffee with friends, or soaking up the sun at the beach. She also loves spending time outdoors and staying active in her community.
+                            Susannah is thrilled to open the doors to Horizon Physical Therapy & Wellness and is excited to serve the local community with expert care and a heart for wellness.
+                            </p>
+                        <ul class="team-details__client-list list-unstyled">
+                            <li>
+                                <p><span>Experience:</span>6 Years Physical Therapy</p>
+                            </li>
+                            <li>
+                                <p><span>Position:</span>Co-Founder & Women's Health Specialist</p>
+                            </li>
+                            <li>
+                                <p><span>Phone:</span><a href="tel:8036136099">803-613-6099</a></p>
+                            </li>
+                        </ul>
+                        <div class="team-details__client-social-box">
+                            <div class="team-details__client-social-title">
+                                <p>Social Media</p>
+                            </div>
+                            <div class="team-details__client-social">
+                                <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-details__bottom">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="team-details__bottom-left">
+                                <h3 class="team-details__bottom-title-1">Professional Info</h3>
+                                <p class="team-details__bottom-text-1">Dr. Susannah specializes in women's health physical therapy, with extensive experience in treating pregnant and postpartum patients. Her approach combines evidence-based practice with compassionate care, focusing on empowering women through every stage of life.</p>
+                                <p class="team-details__bottom-text-2">She is certified in dry needling and has developed specialized protocols for pelvic floor dysfunction, pregnancy-related pain, and postpartum recovery. Her treatment philosophy emphasizes movement as medicine and creating a supportive healing environment.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="team-details__bottom-right">
+                                <ul class="team-details__progress-box list-unstyled">
+                                    <li>
+                                        <div class="team-details__progress">
+                                            <h4 class="team-details__progress-title">Physical Therapy</h4>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="95%">
+                                                    <div class="count-text">95%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="team-details__progress">
+                                            <h4 class="team-details__progress-title">Rehabilitation</h4>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="92%">
+                                                    <div class="count-text">92%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="team-details__progress">
+                                            <h4 class="team-details__progress-title">Women's Health</h4>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="98%">
+                                                    <div class="count-text">98%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Team Details Two End - Susannah-->
+
+        <!--Team Details Three Start - Daniela Espaillat-->
+        <section class="team-details" style="padding-top: 0; padding-bottom: 80px;">
+            <div class="container">
+                <div class="team-details__top">
+                    <div class="team-details__top-shape-1">
+                        <img src="assets/images/shapes/team-details-top-shape-1.png" alt="">
+                    </div>
+                    <div class="team-details__client-img">
+                        <img src="PNG LOGOS/HorizonAssistant.jpg" alt="">
+                    </div>
+                    <div class="team-details__client-content">
+                        <h3 class="team-details__client-title">Daniela Espaillat </h3>
+                        <p class="team-details__client-sub-title">Patient Care Coordinator </p>
+                        <p class="team-details__client-text">Daniela Espaillat was born in the Dominican Republic and moved to the United States at the age of nine. She earned her high school diploma in Manhattan, New York, where she spent her childhood. In 2015, Daniela relocated to Augusta, Georgia, and later began her studies at Aiken Technical College, aiming for an Associate Degree in Registered Nursing. Throughout this demanding program, Daniela completed 24 credit hours, which provided her with a strong foundation in the healthcare field. Daniela’s passion for learning has driven her to earn certification in Medical Office Procedures and Administration Fundamentals Specialization through the MedCerts online career training program.
+ 
+                            Daniela's firsthand experience caring for her sick mother during home hospice demonstrated to her how significant empathy and compassion can be in both her life and the lives of others, providing her with a deeper understanding of the essence of serving others. As the Patient Care Coordinator, Daniela is dedicated to demonstrating a strong work ethic that meets the needs of each patient. Whether it's by giving a warm and inviting greeting, taking calls, scheduling appointments, and much more;resulting in a positive and fulfilling experience for those she serves.
+                            
+                            During her free time Daniela loves to spend quality time with her husband and daughter. You can find her with her spouse cheering on their 11 year old daughter at school games and performances. You can also find her staying active and healthy by working out at the gym and making nutritious meals for her and her family. Additionally Daniela and her family seek to grow in faith by attending church. Last but not least she enjoys looking for ways to empower and encourage others.
+                                                        
+                            </p>
+                        <ul class="team-details__client-list list-unstyled">
+                            <li>
+                                <p><span>Experience:</span>3 Years Healthcare Administration</p>
+                            </li>
+                            <li>
+                                <p><span>Position:</span>Patient Care Coordinator</p>
+                            </li>
+                            <li>
+                                <p><span>Phone:</span><a href="tel:8036136099">803-613-6099</a></p>
+                            </li>
+                        </ul>
+                        <div class="team-details__client-social-box">
+                            <div class="team-details__client-social-title">
+                                <p>Social Media</p>
+                            </div>
+                            <div class="team-details__client-social">
+                                <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-details__bottom">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="team-details__bottom-left">
+                                <h3 class="team-details__bottom-title-1">Professional Background</h3>
+                                <p class="team-details__bottom-text-1">Daniela brings a unique combination of healthcare education and personal experience to her role as Patient Care Coordinator. Her background in nursing studies and medical office administration provides her with the technical knowledge needed to manage patient care efficiently. She completed 24 credit hours in the Registered Nursing program at Aiken Technical College, giving her a solid foundation in healthcare principles and patient care protocols.</p>
+                                <p class="team-details__bottom-text-2">Her certification in Medical Office Procedures and Administration Fundamentals Specialization through MedCerts has equipped her with advanced skills in healthcare administration, patient scheduling, and medical record management. Her personal experience caring for her mother during hospice care has given her deep empathy and understanding of patient needs. This combination of professional training and personal compassion makes her an invaluable asset in ensuring every patient receives exceptional care and support throughout their treatment journey.</p>
+                                <div style="clear: both; height: 20px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="team-details__bottom-right">
+                                <ul class="team-details__progress-box list-unstyled">
+                                    <li>
+                                        <div class="team-details__progress">
+                                            <h4 class="team-details__progress-title">Patient Care</h4>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="95%">
+                                                    <div class="count-text">95%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="team-details__progress">
+                                            <h4 class="team-details__progress-title">Administrative Skills</h4>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="92%">
+                                                    <div class="count-text">92%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="team-details__progress">
+                                            <h4 class="team-details__progress-title">Communication</h4>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="98%">
+                                                    <div class="count-text">98%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both; height: 40px;"></div>
+            </div>
+        </section>
+        <!--Team Details Three End - Daniela Espaillat-->
 
         <!--Related Team Start-->
         <!--
@@ -359,7 +483,7 @@
                             <div class="swiper-slide">
                                 <div class="team-two__single">
                                     <div class="team-two__img">
-                                        <img src="assets/images/team/team-2-1.jpg" alt="">
+                                        <img src="assets/Physical Therapy Images/HorizonFabian.jpg" alt="">
                                     </div>
                                     <div class="team-two__content">
                                         <div class="team-two__info-box">
@@ -368,9 +492,7 @@
                                             <p class="team-two__sub-title">Physical Therapist</p>
                                         </div>
                                         <div class="team-two__social">
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                            <a href="#"><span class="icon-link-in"></span></a>
+                                            <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -378,7 +500,7 @@
                             <div class="swiper-slide">
                                 <div class="team-two__single">
                                     <div class="team-two__img">
-                                        <img src="assets/images/team/team-2-2.jpg" alt="">
+                                        <img src="assets/Physical Therapy Images/HorizonSuzanne.jpg" alt="">
                                     </div>
                                     <div class="team-two__content">
                                         <div class="team-two__info-box">
@@ -387,9 +509,7 @@
                                             <p class="team-two__sub-title">Senior Therapist</p>
                                         </div>
                                         <div class="team-two__social">
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                            <a href="#"><span class="icon-link-in"></span></a>
+                                            <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +517,7 @@
                             <div class="swiper-slide">
                                 <div class="team-two__single">
                                     <div class="team-two__img">
-                                        <img src="assets/images/team/team-2-3.jpg" alt="">
+                                        <img src="assets/Physical Therapy Images/horizonassitant.jpg" alt="">
                                     </div>
                                     <div class="team-two__content">
                                         <div class="team-two__info-box">
@@ -406,9 +526,7 @@
                                             <p class="team-two__sub-title">Acupuncture Therapist</p>
                                         </div>
                                         <div class="team-two__social">
-                                            <a href="#"><span class="icon-facebook"></span></a>
-                                            <a href="#"><span class="icon-instagram"></span></a>
-                                            <a href="#"><span class="icon-link-in"></span></a>
+                                            <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><span class="icon-instagram"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -431,16 +549,11 @@
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div class="footer-widget__column footer-widget__about">
                                     <div class="site-logo footer-widget__logo">
-                                        <a href="index.html"><img src="assets/images/resources/logo-1.svg" alt=""></a>
+                                        <a href="index2.html"><img src="PNG LOGOS/HORIZON_LOGO_1COLORREVERSE.png" width="120" height="32" alt=""></a>
                                     </div>
-                                    <p class="footer-widget__about-text">Phasellus ultricies aliquam volutpat
-                                        ullamcorper laoreet neque, a lacinia
-                                        curabitur lacinia mollis</p>
+                                    <p class="footer-widget__about-text">Horizon Physical Therapy & Wellness is led by a team of experienced healthcare professionals dedicated to providing exceptional physical therapy services. Our co-founders, Dr. Fabian and Dr. Susannah Azofeifa, bring over 25 years of combined experience in sports rehabilitation, women's health, and manual therapy. Together with our Patient Care Coordinator Daniela Espaillat, we ensure every patient receives personalized, compassionate care tailored to their unique needs and recovery goals.</p>
                                     <div class="site-footer__social">
-                                        <a href="#"><i class="icon-facebook"></i></a>
-                                        <a href="#"><i class="icon-twitter"></i></a>
-                                        <a href="#"><i class="icon-link-in"></i></a>
-                                        <a href="#"><i class="icon-youtube"></i></a>
+                                        <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank"><i class="icon-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -458,17 +571,28 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="footer-widget__column footer-widget__services">
                                     <div class="footer-widget__title-box">
                                         <h3 class="footer-widget__title">Our Services</h3>
                                     </div>
                                     <ul class="footer-widget__quick-link-list list-unstyled">
-                                        <li><a href="chiropractic-care.html"><span class="icon-andle-dabble"></span>Chiropractic Therapy</a></li>
-                                        <li><a href="massages-therapy.html"><span class="icon-andle-dabble"></span>Massage Therapy</a></li>
-                                        <li><a href="trained-therapists.html"><span class="icon-andle-dabble"></span>Trained Therapists</a></li>
-                                        <li><a href="laser-therapy.html"><span class="icon-andle-dabble"></span>Low Level Laser</a></li>
-                                        <li><a href="laser-therapy.html"><span class="icon-andle-dabble"></span>Acupuncture</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Women's Health & Physical Therapy</a></li>
+                                        <li><a href="laser-therapy.html"><span class="icon-andle-dabble"></span>Sports Rehabilitation & CrossFit Training</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Manual Therapy & Pain Management</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Pre and Post Surgical Rehabilitation</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Vestibular Rehabilitation Therapy (VRT)</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Physical Therapy Treatment for Headaches</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Musculoskeletal Pain Management</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Low Back Pain Treatment</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Running and Gait Analysis</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Geriatric Program</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Therapeutic Dry Needling</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>TMJ Rehabilitation</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Fall Prevention and Balance Training</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Arthritis Management</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Post Concussion Rehabilitation</a></li>
+                                        <li><a href="physical-rehab.html"><span class="icon-andle-dabble"></span>Wellness Program</a></li>
                                     </ul>
                                 </div>
                             </div> -->
@@ -484,7 +608,7 @@
                                             </div>
                                             <div class="content">
                                                 <span>Location:</span>
-                                                <p>100 Georgia Avenue<br> North Augusta, SC 29841</p>
+                                                <p>210 East Martintown Road<br> North Augusta, SC 29841</p>
                                             </div>
                                         </li>
                                         <li>
@@ -493,7 +617,7 @@
                                             </div>
                                             <div class="content">
                                                 <span>Opening Hours: </span>
-                                                <p>Mon - Sat: 10.00 AM - 4.00 PM</p>
+                                                <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
                                             </div>
                                         </li>
                                         <li>
@@ -503,12 +627,21 @@
                                             <div class="content">
                                                 <span>Phone Call:</span>
                                                 <p>
-                                                    <a href="tel:20866660112">208-6666-0112, </a>
-                                                    <a href="tel:30855550113">308-5555-0113</a>
+                                                    <a href="tel:8036136099">803-613-6099</a>
                                                 </p>
                                             </div>
                                         </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-fax"></span>
+                                            </div>
+                                            <div class="content">
+                                                <span>Fax:</span>
+                                                <p><a href="tel:8035998267">(803) 599-8267</a></p>
+                                            </div>
+                                        </li>
                                     </ul>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -526,7 +659,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.svg" width="150" alt="" /></a>
+                <a href="index2.html" aria-label="logo image"><img src="PNG LOGOS/HORIZON_LOGO_1COLORREVERSE.png" width="150" height="40" alt="" /></a>
             </div>
             <div class="mobile-nav__container"></div>
             <!-- /.mobile-nav__container -->
@@ -534,19 +667,16 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@chirofind.com">needhelp@chirofind.com</a>
+                    <a href="mailto:Fabian@horizonptw.com">Fabian@horizonptw.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                                                        <a href="tel:+208-666-0112">+208-666-0112</a>
+                                                        <a href="tel:8036136099">803-613-6099</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
-                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="https://www.instagram.com/horizon_physical_therapy?igsh=MW96ZGZrdDlveXkyNA==" target="_blank" class="fab fa-instagram"></a>
                 </div>
             </div><!-- /.mobile-nav__top -->
 
@@ -565,7 +695,7 @@
 
     <!-- search popup start-->
     <div class="td-search-popup" id="td-search-popup">
-        <form action="index.html" class="search-form">
+        <form action="index2.html" class="search-form">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search....." />
             </div>
